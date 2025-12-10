@@ -1,3 +1,31 @@
+:root {
+  /* background colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #d9d5cf;
+
+  /* cta background color */
+  --color-cta-bg: #1d1d1d;
+  --color-cta-bg-hover: #d9d5cf;
+
+  /* text color black */
+  --color-text-primary: #1d1d1d;
+  --color-text-secondary: #ffffff;
+
+  /* heading */
+  --font-h1: "Anton", sans-serif;
+
+  /* prose */
+  --font-prose: "Epilogue", sans-serif;
+}
+
+.heading {
+  font-family: var(--font-h1);
+}
+
+.prose {
+  font-family: var(--font-prose);
+  font-weight: 400;
+}
 /* --- Header --- */
 .menu {
   position: fixed;
