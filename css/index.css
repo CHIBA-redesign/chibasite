@@ -1,0 +1,71 @@
+/* general styling */
+
+h1 {
+  font-family: var(--font-h1);
+  font-size: 2.5rem;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+}
+
+/* skal evt. kopieres ind i layout.css */
+body {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* index styling */
+
+.index-flex-cta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.flex-end-btn {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+/* mobile */
+
+@media screen and (max-width: 799px) {
+  .index-grid-1 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 50px;
+    text-align: center;
+  }
+
+  .index-flex-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+/* desktop */
+
+@media screen and (min-width: 800px) {
+  .index-grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding-top: 50px;
+  }
+
+  .index-flex-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: space-between;
+    justify-content: center;
+    gap: 80px;
+  }
+}
