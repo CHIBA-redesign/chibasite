@@ -26,3 +26,20 @@
   font-family: var(--font-prose);
   font-weight: 400;
 }
+/* CTABTN - Alle call to action knapper  */
+.ctabtn {
+  background: black;
+  color: white;
+  text-decoration: none;
+  padding: 9px 14px;
+  font-size: 14px;
+  display: inline-block;
+  font-family: var(--font-prose);
+}
+/* CTABTN - DESKTOP  */
+@media (min-width: 800px) {
+  .ctabtn {
+    padding: 15px 35px;
+    font-size: 16px;
+  }
+}
