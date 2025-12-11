@@ -1,4 +1,13 @@
 /* --- Header --- */
+.heading {
+  font-family: var(--font-h1);
+}
+
+.prose {
+  font-family: var(--font-prose);
+  font-weight: 400;
+}
+/* --- Header --- */
 .menu {
   position: fixed;
   top: 0;
@@ -16,6 +25,7 @@
 .burgermenu-icon {
   height: 20px;
   width: auto;
+  margin-left: 5px;
 }
 
 /* Logo */
@@ -23,6 +33,7 @@
   flex: 1;
   display: flex;
   justify-content: center;
+  transform: translateX(10%);
 }
 
 .logo-icon {
@@ -34,36 +45,32 @@
 .book-container {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
+  margin-right: 5px;
 }
 .kurv-icon {
-  height: 15px;
+  height: 20px;
   width: auto;
+  margin-top: 4px;
 }
-.book-btn {
-  background: black;
-  color: white;
-  text-decoration: none;
-  padding: 7px 14px;
-  font-size: 14px;
-  display: inline-block;
-}
+
 /*  Dekstop  */
 @media (min-width: 800px) {
   .burgermenu-icon {
     height: 40px;
+    margin-left: 30px;
   }
-
+  .logo-container {
+    transform: translateX(3%);
+  }
   .logo-icon {
     height: 100px;
   }
-
-  .kurv-icon {
-    height: 24px;
+  .book-container {
+    margin-right: 30px;
+    gap: 20px;
   }
-
-  .book-btn {
-    padding: 15px 35px;
-    font-size: 16px;
+  .kurv-icon {
+    height: 30px;
   }
 }
