@@ -1,7 +1,6 @@
 .grid_1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  align-items: center;
   padding-top: 50px;
 }
 
@@ -46,5 +45,54 @@ footer {
   background-color: #eeedea;
 }
 
-@media (width>=1200px) {
+.sociale svg {
+  height: 25px;
+}
+
+@media (width>=800px) {
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+  }
+
+  .grid_1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .info {
+    text-align: left;
+    margin: auto;
+    padding-bottom: 40px;
+    padding-top: 40px;
+  }
+
+  .logo {
+    grid-column: 3 / 4;
+  }
+
+  .add {
+    border-right: 2px solid black;
+    grid-column: 1 / 2;
+    text-align: left;
+    align-items: center;
+    width: 200x;
+    height: 200px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    padding-left: 180px;
+  }
+
+  .linje {
+    display: contents;
+  }
+
+  .sociale {
+    grid-column: 1 / 2;
+  }
+
+  .copy {
+    grid-column: 3/4;
+  }
 }
