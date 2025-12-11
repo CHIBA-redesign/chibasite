@@ -1,0 +1,50 @@
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.grid_1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: center;
+  padding-top: 50px;
+}
+
+.logo {
+  border-left: 2px solid black;
+  text-align: center;
+}
+
+.logo img {
+  width: 200x;
+  height: 200px;
+  padding-bottom: 40px;
+  padding-top: 40px;
+}
+
+.linje {
+  display: grid;
+  margin: auto;
+  text-align: left;
+}
+
+.info {
+  padding-top: 40px;
+}
+
+.open {
+  line-height: 1px;
+}
+.contact,
+.rapport {
+  text-decoration: underline;
+}
+
+footer {
+  background-color: #eeedea;
+}
+
+@media (width>=1200px) {
+}
