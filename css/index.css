@@ -54,6 +54,14 @@ section {
     justify-content: center;
     gap: 30px;
   }
+
+  .index-grid-3 {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    justify-content: center;
+    gap: 20px;
+    text-align: center;
+  }
 }
 
 /* desktop */

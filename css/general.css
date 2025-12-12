@@ -22,6 +22,10 @@
   font-family: var(--font-h1);
 }
 
+.underoverskrift {
+  font-family: var(--font-prose);
+  font-weight: 600;
+}
 .prose {
   font-family: var(--font-prose);
   font-weight: 400;
