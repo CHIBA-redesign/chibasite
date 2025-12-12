@@ -14,72 +14,52 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    <!--- Favicon --->
   </head>
   <body>
     <!--- Header --->
-    <!DOCTYPE html>
-    <html lang="en">
-      <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>CHIBA</title>
-        <link rel="stylesheet" href="reset.css" />
-        <link rel="stylesheet" href="css/general.css" />
-        <link rel="stylesheet" href="css/layout.css" />
-        <link rel="stylesheet" href="css/event.css" />
-        <!--- Favicon --->
-        <link
-          rel="apple-touch-icon"
-          sizes="180x180"
-          href="favicon/apple-touch-icon.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="32x32"
-          href="favicon/favicon-32x32.png"
-        />
-        <link
-          rel="icon"
-          type="image/png"
-          sizes="16x16"
-          href="favicon/favicon-16x16.png"
-        />
-        <link rel="manifest" href="site.webmanifest" />
-      </head>
-      <body>
-        <!--- Header --->
-        <header class="menu">
-          <nav class="burgermenu-container">
-            <a href="index.html">
-              <img
-                src="content/svg/burgermenu.svg"
-                alt="burger menu"
-                class="burgermenu-icon"
-              />
-            </a>
-          </nav>
+    <header class="menu">
+      <nav class="burgermenu-container">
+        <!-- Burgerknap -->
+        <button class="burgermenu-knap" type="button" aria-label="Åben menu">
+          <img
+            src="content/svg/burgermenu.svg"
+            alt="burger menu knap"
+            class="burgermenu-icon"
+          />
+        </button>
+      </nav>
 
-          <div class="logo-container">
-            <a href="index.html">
-              <img src="content/svg/logo1.svg" alt="logo" class="logo-icon" />
-            </a>
-          </div>
+      <!-- Logo -->
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="content/svg/logo1.svg" alt="logo" class="logo-icon" />
+        </a>
+      </div>
 
-          <nav class="book-container">
-            <a href="index.html">
-              <img
-                src="content/svg/kurv.svg"
-                alt="kurv icon"
-                class="kurv-icon"
-              />
-            </a>
-            <!--- book knap --->
-            <a href="#" class="ctabtn">BOOK </a>
-          </nav>
-        </header>
-      </body>
-    </html>
+      <!-- Kurv og Book kanp -->
+      <nav class="book-container">
+        <a href="index.html">
+          <img src="content/svg/kurv.svg" alt="kurv icon" class="kurv-icon" />
+        </a>
+        <a href="#" class="ctabtn">BOOK</a>
+      </nav>
+    </header>
+    <!-- Menuen - lige under header -->
+    <div class="slide-nav" id="site-slide-nav" aria-hidden="true">
+      <!-- Mørk / sløret overlay på resten af siden når menu er åben -->
+      <div class="overlay-bg" data-close></div>
+
+      <!-- Selve menu content -->
+      <nav class="slidemenu-content" aria-label="Primær navigation">
+        <ul>
+          <li><a href="#0">MENU</a></li>
+          <li><a href="#0">EVENT</a></li>
+          <li><a href="#0">WEBSHOP</a></li>
+          <li><a href="#0">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Link til JS -->
+    <script defer src="javascript/menu.js"></script>
   </body>
 </html>
