@@ -93,6 +93,9 @@
   background: rgba(0, 0, 0, 0.6);
   pointer-events: auto;
 }
+.slide-nav .overlay-bg {
+  pointer-events: none;
+}
 /* --- Burger knappen --- */
 .burgermenu-knap {
   border: 0;
