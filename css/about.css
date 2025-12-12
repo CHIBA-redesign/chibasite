@@ -32,13 +32,13 @@ p {
   .grid_1-1-1 {
     row-gap: 60px;
     column-gap: 60px;
-    padding: 50px 200px;
+    padding: 50px 100px;
   }
 
   .top {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 10px 200px;
+    padding: 10px 100px;
   }
 
   .about {
