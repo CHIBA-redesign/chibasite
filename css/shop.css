@@ -27,7 +27,6 @@ h2 {
 .shop_grid-1-1-1 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
 }
 
 @media (min-width: 800px) {
