@@ -24,9 +24,8 @@ h2 {
   grid-template-columns: 1fr;
 }
 
-.shop_grid-1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr;
+.letter-margin {
+  margin-bottom: 50px;
 }
 
 @media (min-width: 800px) {
