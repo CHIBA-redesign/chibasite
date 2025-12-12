@@ -9,6 +9,7 @@ h1 {
 
 p {
   font-family: var(--font-prose);
+  font-size: 0.8rem;
 }
 
 h2 {
@@ -24,8 +25,17 @@ h2 {
   grid-template-columns: 1fr;
 }
 
+.shop_grid-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.shop_section-1 {
+  margin-top: 20px;
+}
+
 .letter-margin {
-  margin-bottom: 50px;
+  margin: 20px 0px 50px 0px;
 }
 
 @media (min-width: 800px) {
@@ -49,5 +59,10 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  p {
+    font-family: var(--font-prose);
+    font-size: 1rem;
   }
 }
