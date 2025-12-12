@@ -2,12 +2,36 @@ main {
   margin: 0 auto;
 }
 
-img {
-  cursor: pointer;
+/* OR if that doesn't work, add it here: */
+.shop_grid-1-1,
+.shop_grid-1-1-1 {
+  padding: 0 20px;
 }
 
-img:hover {
-  opacity: 0.8;
+.hover_shop {
+  cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block; /* Add this */
+}
+
+.hover_shop:hover {
+  opacity: 0.7;
+}
+
+.btn-shop {
+  background: var(--color-cta-bg);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 10px 65px;
+  justify-items: center;
+  font-size: 10px;
+  display: inline-block;
+  font-family: var(--font-prose);
+  letter-spacing: 0.03em;
+  border: none;
+  cursor: pointer;
 }
 
 h1 {
@@ -22,7 +46,6 @@ h1 {
 p {
   font-family: var(--font-prose);
   font-size: 0.8rem;
-  margin-top: 10px;
 }
 
 h2 {
@@ -33,17 +56,10 @@ h2 {
   color: var(--color-text-primary);
 }
 
-.letter-margin-1 {
-  margin-top: 50px;
-}
-
+.letter-margin-1,
 .letter-margin-2 {
-  margin: 20px 0px 60px 0px;
-}
-
-.shop_section {
-  display: grid;
-  grid-template-columns: 1fr;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 @media (min-width: 800px) {
@@ -53,6 +69,10 @@ h2 {
     gap: 50px;
   }
 
+  .btn-shop {
+    padding: 10px 85px;
+  }
+
   h1 {
     text-align: start;
   }
@@ -60,6 +80,7 @@ h2 {
   .shop_grid-1-1-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    padding: 0 0px;
     gap: 50px;
   }
 

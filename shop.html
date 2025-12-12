@@ -16,118 +16,121 @@
     />
   </head>
   <body>
-    <!--- Header --->
     <header class="menu">
       <nav class="burgermenu-container">
-        <!-- Burgerknap -->
-        <button class="burgermenu-knap" type="button" aria-label="Åben menu">
+        <a href="index.html">
           <img
             src="content/svg/burgermenu.svg"
-            alt="burger menu knap"
+            alt="burger menu"
             class="burgermenu-icon"
           />
-        </button>
+        </a>
       </nav>
 
-      <!-- Logo -->
       <div class="logo-container">
         <a href="index.html">
           <img src="content/svg/logo1.svg" alt="logo" class="logo-icon" />
         </a>
       </div>
 
-      <!-- Kurv og Book kanp -->
       <nav class="book-container">
         <a href="index.html">
           <img src="content/svg/kurv.svg" alt="kurv icon" class="kurv-icon" />
         </a>
-        <a href="#" class="ctabtn">BOOK</a>
+        <!--- book knap --->
+        <a href="#" class="ctabtn">BOOK </a>
       </nav>
     </header>
-    <!-- Menuen - lige under header -->
-    <div class="slide-nav" id="site-slide-nav" aria-hidden="true">
-      <!-- Mørk / sløret overlay på resten af siden når menu er åben -->
-      <div class="overlay-bg" data-close></div>
-
-      <!-- Selve menu content -->
-      <nav class="slidemenu-content" aria-label="Primær navigation">
-        <ul>
-          <li><a href="menu.html">MENU</a></li>
-          <li><a href="event.html">EVENT</a></li>
-          <li><a href="shop.html">WEBSHOP</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
-      </nav>
-    </div>
     <main>
-      <section class="shop_section">
-        <div class="shop_grid-1-1">
-          <div>
-            <div class="letter-margin-1">
-              <h1>
-                A TASTE OF CHIBA <br />
-                AT HOME
-              </h1>
-              <p>
-                Experience the authentic flavors of Chiba without leaving your
-                home. From fresh coastal specialties to traditional regional
-                dishes, Chiba’s culinary heritage brings together simplicity,
-                craftsmanship, and natural ingredients.
-              </p>
-            </div>
+      <div class="shop_grid-1-1">
+        <div>
+          <div class="letter-margin-1">
+            <h1>
+              A TASTE OF CHIBA <br />
+              AT HOME
+            </h1>
+            <p>
+              Experience the authentic flavors of Chiba without leaving your
+              home. From fresh coastal specialties to traditional regional
+              dishes, Chiba’s culinary heritage brings together simplicity,
+              craftsmanship, and natural ingredients.
+            </p>
           </div>
+        </div>
 
-          <div>
-            <div class="letter-margin-1">
-              <img src="content/img/cookbook.webp" alt="cookbook" />
-            </div>
-            <div class="letter-margin-2">
-              <h2>COOKBOOK</h2>
-              <p>
-                Homemade Dim Sum & Indo‑Chinese Flavors, the definitive recipe
-                collection inspired by the beloved Chiba restaurant.
-              </p>
-            </div>
+        <div>
+          <div class="letter-margin-1">
+            <img
+              src="content/img/cookbook.webp"
+              alt="cookbook"
+              class="hover_shop"
+            />
+            <button class="btn-shop" type="button" aria-label="Add to cart">
+              <p class="btn-p">ADD TO CART DKK 299</p>
+            </button>
+          </div>
+          <div class="letter-margin-2">
+            <h2>COOKBOOK</h2>
+            <p>
+              Homemade Dim Sum & Indo‑Chinese Flavors, the definitive recipe
+              collection inspired by the beloved Chiba restaurant.
+            </p>
           </div>
         </div>
-      </section>
-      <section class="shop_section">
-        <div class="shop_grid-1-1-1">
-          <div>
-            <img src="content/img/soy_sauce.webp" alt="soysauce" />
-            <div class="letter-margin-2">
-              <h2>SOY SAUCE</h2>
-              <p>
-                A rich, savory soy sauce crafted in small batches using
-                traditional fermentation.
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="content/img/sweet_chili_sauce.webp" alt="sweetchili" />
-            <div class="letter-margin-2">
-              <h2>SWEET CHILI</h2>
-              <p>
-                Handmade with fresh red chilies, garlic, and carefully balanced
-                spices, then slow-cooked to intensify flavor.
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="content/img/spicy_chili.webp" alt="spicychili" />
-            <div class="letter-margin-2">
-              <h2>SPICY CHILI SAUCE</h2>
-              <p>
-                A bold, fiery homemade chili sauce crafted from fresh red
-                chilies, garlic, and natural spices.
-              </p>
-            </div>
+      </div>
+      <div class="shop_grid-1-1-1">
+        <div>
+          <img
+            src="content/img/soy_sauce.webp"
+            alt="soysauce"
+            class="hover_shop"
+          />
+          <button class="btn-shop" type="button" aria-label="Add to cart">
+            <p class="btn-p">ADD TO CART DKK 299</p>
+          </button>
+          <div class="letter-margin-2">
+            <h2>SOY SAUCE</h2>
+            <p>
+              A rich, savory soy sauce crafted in small batches using
+              traditional fermentation.
+            </p>
           </div>
         </div>
-      </section>
+        <div>
+          <img
+            src="content/img/sweet_chili_sauce.webp"
+            alt="sweetchili"
+            class="hover_shop"
+          />
+          <button class="btn-shop" type="button" aria-label="Add to cart">
+            <p class="btn-p">ADD TO CART DKK 299</p>
+          </button>
+          <div class="letter-margin-2">
+            <h2>SWEET CHILI</h2>
+            <p>
+              Handmade with fresh red chilies, garlic, and carefully balanced
+              spices, then slow-cooked to intensify flavor.
+            </p>
+          </div>
+        </div>
+        <div>
+          <img
+            src="content/img/spicy_chili.webp"
+            alt="spicychili"
+            class="hover_shop"
+          />
+          <button class="btn-shop" type="button" aria-label="Add to cart">
+            <p class="btn-p">ADD TO CART DKK 299</p>
+          </button>
+          <div class="letter-margin-2">
+            <h2>SPICY CHILI SAUCE</h2>
+            <p>
+              A bold, fiery homemade chili sauce crafted from fresh red chilies,
+              garlic, and natural spices.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-    <!-- Footer-->
-    <!-- Link til JS -->
-    <script defer src="javascript/menu.js"></script>
   </body>
 </html>
