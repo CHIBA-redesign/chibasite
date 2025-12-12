@@ -2,12 +2,16 @@ main {
   margin: 0 auto;
 }
 
-/* OR if that doesn't work, add it here: */
 .shop_grid-1-1,
 .shop_grid-1-1-1 {
   display: grid;
   grid-template-columns: 1fr;
-  padding: 0 20px;
+  padding: 0px 60px;
+}
+
+.shop-item {
+  position: relative;
+  width: 100%;
 }
 
 .hover_shop {
@@ -15,7 +19,7 @@ main {
   max-width: 100%;
   width: 100%;
   height: auto;
-  display: block; /* Add this */
+  display: block;
 }
 
 .hover_shop:hover {
@@ -25,15 +29,32 @@ main {
 .btn-shop {
   background: var(--color-cta-bg);
   color: var(--color-text-secondary);
-  text-decoration: none;
-  padding: 10px 65px;
-  justify-items: center;
-  font-size: 10px;
-  display: inline-block;
+  padding: 15px 30px;
+  font-size: 15px;
   font-family: var(--font-prose);
   letter-spacing: 0.03em;
   border: none;
   cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 100%;
+  gap: 20px;
+  white-space: nowrap; /* Prevent text wrapping */
+}
+
+.btn-shop span {
+  white-space: nowrap; /* Ensure spans don't wrap */
+}
+
+.letter-margin-1 {
+  margin-top: 50px;
+}
+
+.letter-margin-2 {
+  margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 h1 {
@@ -41,32 +62,35 @@ h1 {
   font-size: 2.5rem;
   letter-spacing: 0.04em;
   line-height: 1.3;
+  margin: 50px 0px 50px 0px;
   color: var(--color-text-primary);
   text-align: center;
 }
 
-p {
+h2 {
   font-family: var(--font-prose);
-  font-size: 0.8rem;
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-text-primary);
 }
 
-h2 {
-  font-family: "Anton", sans-serif;
-  font-size: 1.8rem;
-  letter-spacing: 0.04em;
-  line-height: 1.3;
+p {
+  font-family: var(--font-prose);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.6;
   color: var(--color-text-primary);
 }
 
 @media (min-width: 800px) {
   .shop_grid-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
+    display: flex;
+    flex-direction: row;
   }
 
   .btn-shop {
-    padding: 10px 85px;
+    padding: 15px 30px;
+    font-size: 16px;
   }
 
   h1 {
@@ -75,7 +99,7 @@ h2 {
 
   .hover_shop {
     cursor: pointer;
-    max-width: 380px; /* Set consistent size for all images */
+    max-width: 380px;
     width: 100%;
     height: auto;
     display: block;
