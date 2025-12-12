@@ -8,12 +8,31 @@ h1 {
   color: var(--color-text-primary);
 }
 
-/* skal evt. kopieres ind i layout.css */
-body {
+h2 {
+  font-family: var(--font-prose);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-text-primary);
+}
+
+p {
+  font-family: var(--font-prose);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
+
+main {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
+
+section {
+  padding: 20px 40px;
+}
+
+/* skal evt. kopieres ind i layout.css */
 
 /* index styling */
 
@@ -21,6 +40,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-items: space-between;
   justify-content: center;
   gap: 20px;
 }
@@ -28,37 +48,47 @@ body {
 .flex-end-btn {
   display: flex;
   justify-content: flex-end;
-  width: 100%;
 }
 
 /* mobile */
 
-@media screen and (max-width: 799px) {
-  .index-grid-1 {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    justify-content: center;
-    gap: 50px;
-    text-align: center;
-  }
-
-  .index-flex-1 {
-    display: flex;
-    flex-direction: row;
-    align-items: space-between;
-    justify-content: center;
-    gap: 30px;
-  }
+/* @media screen and (max-width: 799px) { */
+.index-grid-1 {
+  display: grid;
+  grid-template-rows: 1fr;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
 }
+
+.index-flex-1 {
+  display: flex;
+  flex-direction: row;
+  align-items: space-between;
+  justify-content: center;
+  gap: 30px;
+}
+
+.index-flex-2 {
+  text-align: center;
+}
+
+.index-bg-change {
+  background-color: var(--color-bg-secondary);
+  width: 100%;
+}
+
+/* } */
 
 /* desktop */
 
 @media screen and (min-width: 800px) {
   .index-grid-1 {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     padding-top: 50px;
+    gap: 100px;
   }
 
   .index-flex-1 {
@@ -67,5 +97,46 @@ body {
     align-items: space-between;
     justify-content: center;
     gap: 80px;
+  }
+
+  .left-h1 {
+    text-align: left;
+  }
+
+  .index-grid-2 {
+    display: flex;
+    flex-direction: row;
+    padding: 40px;
+  }
+
+  .index-flex-2 {
+    display: grid;
+    flex-direction: row;
+    padding: 100px 0 80px 0;
+    text-align: left;
+  }
+  p {
+    font-size: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .index-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+
+  .grid-shop-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+
+  .shop-card {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    text-align: left;
   }
 }
