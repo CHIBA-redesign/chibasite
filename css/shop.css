@@ -20,22 +20,12 @@ h2 {
   color: var(--color-text-primary);
 }
 
-.shop_grid-1-1 {
-  display: grid;
-  grid-template-columns: 1fr;
+.letter-margin-1 {
+  margin-top: 50px;
 }
 
-.shop_grid-1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr;
-}
-
-.shop_section-1 {
-  margin-top: 20px;
-}
-
-.letter-margin {
-  margin: 20px 0px 50px 0px;
+.letter-margin-2 {
+  margin: 20px 0px 60px 0px;
 }
 
 @media (min-width: 800px) {
