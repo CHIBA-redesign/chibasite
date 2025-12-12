@@ -2,6 +2,14 @@ main {
   margin: 0 auto;
 }
 
+img {
+  cursor: pointer;
+}
+
+img:hover {
+  opacity: 0.8;
+}
+
 h1 {
   font-family: var(--font-h1);
   font-size: 2.5rem;
@@ -14,6 +22,7 @@ h1 {
 p {
   font-family: var(--font-prose);
   font-size: 0.8rem;
+  margin-top: 10px;
 }
 
 h2 {
