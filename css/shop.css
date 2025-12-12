@@ -26,10 +26,26 @@ main {
   opacity: 0.7;
 }
 
+.image-wrapper {
+  display: grid;
+  width: 100%;
+}
+
+.image-wrapper .hover_shop,
+.btn-shop {
+  grid-area: 1 / 1;
+}
+
 .btn-shop {
   background: var(--color-cta-bg);
   color: var(--color-text-secondary);
+  margin-bottom: 25px;
   padding: 15px 30px;
+  align-self: end;
+  justify-self: center;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
   font-size: 15px;
   font-family: var(--font-prose);
   letter-spacing: 0.03em;
@@ -37,15 +53,31 @@ main {
   cursor: pointer;
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
+  width: 85%;
+  max-width: 350px;
   gap: 20px;
-  white-space: nowrap; /* Prevent text wrapping */
+  opacity: 0; /* Hidden by default */
+  transition: opacity 0.3s ease, transform 0.3s ease;
+  white-space: nowrap;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-shop span {
-  white-space: nowrap; /* Ensure spans don't wrap */
+  white-space: nowrap;
+}
+
+.image-wrapper:hover .hover_shop {
+  opacity: 0.7;
+}
+
+.image-wrapper:hover .btn-shop {
+  opacity: 1; /* Visible on hover */
+}
+
+.hover_shop {
+  position: relative;
+  z-index: 1;
 }
 
 .letter-margin-1 {
@@ -91,6 +123,8 @@ p {
   .btn-shop {
     padding: 15px 30px;
     font-size: 16px;
+    width: 85%;
+    max-width: 350px;
   }
 
   h1 {
