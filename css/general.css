@@ -24,7 +24,7 @@
 
 .underoverskrift {
   font-family: var(--font-prose);
-  font-weight: 600;
+  font-weight: 700;
 }
 .prose {
   font-family: var(--font-prose);
@@ -47,7 +47,7 @@
   background: var(--color-cta-bg);
   color: var(--color-text-secondary);
   text-decoration: none;
-  padding: 14px 35px;
+  padding: 10px 25px;
   font-size: 14px;
   display: inline-block;
   font-family: var(--font-prose);
