@@ -22,7 +22,6 @@ h2 {
 .shop_grid-1-1 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
 }
 
 .shop_grid-1-1-1 {
@@ -45,6 +44,12 @@ h2 {
   .shop_grid-1-1-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    gap: 50px;
+  }
+
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
   }
 }
