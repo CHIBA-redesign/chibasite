@@ -11,15 +11,40 @@ p {
   font-family: var(--font-prose);
 }
 
-.shop_section {
-  display: grid;
-  justify-content: center;
-}
-
-h3 {
-  font-family: var(--font-h1);
-  font-size: 1.5rem;
+h2 {
+  font-family: "Anton", sans-serif;
+  font-size: 1.8rem;
   letter-spacing: 0.04em;
   line-height: 1.3;
   color: var(--color-text-primary);
+}
+
+.shop_grid-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+.shop_grid-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+}
+
+@media (min-width: 800px) {
+  .shop_grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+
+  h1 {
+    text-align: start;
+  }
+
+  .shop_grid-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+  }
 }
