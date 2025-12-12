@@ -16,31 +16,49 @@
     />
   </head>
   <body>
+    <!--- Header --->
     <header class="menu">
       <nav class="burgermenu-container">
-        <a href="index.html">
+        <!-- Burgerknap -->
+        <button class="burgermenu-knap" type="button" aria-label="Åben menu">
           <img
             src="content/svg/burgermenu.svg"
-            alt="burger menu"
+            alt="burger menu knap"
             class="burgermenu-icon"
           />
-        </a>
+        </button>
       </nav>
 
+      <!-- Logo -->
       <div class="logo-container">
         <a href="index.html">
           <img src="content/svg/logo1.svg" alt="logo" class="logo-icon" />
         </a>
       </div>
 
+      <!-- Kurv og Book kanp -->
       <nav class="book-container">
         <a href="index.html">
           <img src="content/svg/kurv.svg" alt="kurv icon" class="kurv-icon" />
         </a>
-        <!--- book knap --->
-        <a href="#" class="ctabtn">BOOK </a>
+        <a href="#" class="ctabtn">BOOK</a>
       </nav>
     </header>
+    <!-- Menuen - lige under header -->
+    <div class="slide-nav" id="site-slide-nav" aria-hidden="true">
+      <!-- Mørk / sløret overlay på resten af siden når menu er åben -->
+      <div class="overlay-bg" data-close></div>
+
+      <!-- Selve menu content -->
+      <nav class="slidemenu-content" aria-label="Primær navigation">
+        <ul>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="event.html">EVENT</a></li>
+          <li><a href="shop.html">WEBSHOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
     <main>
       <section class="shop_section-1">
         <div class="shop_grid-1-1">
@@ -108,5 +126,8 @@
         </div>
       </section>
     </main>
+    <!-- Footer-->
+    <!-- Link til JS -->
+    <script defer src="javascript/menu.js"></script>
   </body>
 </html>

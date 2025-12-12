@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CHIBA</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/general.css" />
+    <link rel="stylesheet" href="css/layout.css" />
+    <link rel="stylesheet" href="css/event.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!--- Header --->
+    <header class="menu">
+      <nav class="burgermenu-container">
+        <!-- Burgerknap -->
+        <button class="burgermenu-knap" type="button" aria-label="Åben menu">
+          <img
+            src="content/svg/burgermenu.svg"
+            alt="burger menu knap"
+            class="burgermenu-icon"
+          />
+        </button>
+      </nav>
+
+      <!-- Logo -->
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="content/svg/logo1.svg" alt="logo" class="logo-icon" />
+        </a>
+      </div>
+
+      <!-- Kurv og Book kanp -->
+      <nav class="book-container">
+        <a href="index.html">
+          <img src="content/svg/kurv.svg" alt="kurv icon" class="kurv-icon" />
+        </a>
+        <a href="#" class="ctabtn">BOOK</a>
+      </nav>
+    </header>
+    <!-- Menuen - lige under header -->
+    <div class="slide-nav" id="site-slide-nav" aria-hidden="true">
+      <!-- Mørk / sløret overlay på resten af siden når menu er åben -->
+      <div class="overlay-bg" data-close></div>
+
+      <!-- Selve menu content -->
+      <nav class="slidemenu-content" aria-label="Primær navigation">
+        <ul>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="event.html">EVENT</a></li>
+          <li><a href="shop.html">WEBSHOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+    <main></main>
+    <!-- Footer-->
+    <!-- Link til JS -->
+    <script defer src="javascript/menu.js"></script>
+  </body>
+</html>
