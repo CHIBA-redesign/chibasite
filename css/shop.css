@@ -9,6 +9,7 @@ h1 {
 
 p {
   font-family: var(--font-prose);
+  font-size: 0.8rem;
 }
 
 h2 {
@@ -19,14 +20,12 @@ h2 {
   color: var(--color-text-primary);
 }
 
-.shop_grid-1-1 {
-  display: grid;
-  grid-template-columns: 1fr;
+.letter-margin-1 {
+  margin-top: 50px;
 }
 
-.shop_grid-1-1-1 {
-  display: grid;
-  grid-template-columns: 1fr;
+.letter-margin-2 {
+  margin: 20px 0px 60px 0px;
 }
 
 @media (min-width: 800px) {
@@ -50,5 +49,10 @@ h2 {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+  }
+
+  p {
+    font-family: var(--font-prose);
+    font-size: 1rem;
   }
 }
