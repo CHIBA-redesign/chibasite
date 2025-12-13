@@ -9,6 +9,30 @@ main {
   padding: 0px 60px;
 }
 
+.cart-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.basket-count {
+  position: absolute;
+  top: -12px;
+  right: 3px;
+  background: var(--color-cta-bg);
+  color: white;
+  font-family: var(--font-prose);
+  font-size: 8px;
+  font-weight: 700;
+  min-width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
 .shop-item {
   position: relative;
   width: 100%;
@@ -114,6 +138,16 @@ p {
   main {
     max-width: 1200px;
     margin: 0 auto;
+  }
+
+  .basket-count {
+    font-size: 10px;
+    font-weight: 700;
+    min-width: 20px;
+    height: 20px;
+    padding: 3px;
+    right: 5px;
+    top: -16px;
   }
 
   h1 {

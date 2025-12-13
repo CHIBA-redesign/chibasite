@@ -1,8 +1,10 @@
 const basket_count = document.querySelector(".basket-count");
-const add_to_cart = document.querySelector(".btn-shop");
+const add_to_cart = document.querySelectorAll(".btn-shop");
+add_to_cart.forEach((button) => {
+  button.addEventListener("click", increaseBasketCount);
+});
 
 window.addEventListener("DOMContentLoaded", basketLoad);
-add_to_cart.addEventListener("click", increaseBasketCount);
 
 function basketLoad() {
   let count = localStorage.getItem("basketCount");
