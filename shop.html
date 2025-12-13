@@ -16,118 +16,193 @@
     />
   </head>
   <body>
-    <!--- Header --->
     <header class="menu">
       <nav class="burgermenu-container">
-        <!-- Burgerknap -->
-        <button class="burgermenu-knap" type="button" aria-label="Åben menu">
+        <a href="index.html">
           <img
             src="content/svg/burgermenu.svg"
-            alt="burger menu knap"
+            alt="burger menu"
             class="burgermenu-icon"
           />
-        </button>
+        </a>
       </nav>
 
-      <!-- Logo -->
       <div class="logo-container">
         <a href="index.html">
           <img src="content/svg/logo1.svg" alt="logo" class="logo-icon" />
         </a>
       </div>
 
-      <!-- Kurv og Book kanp -->
       <nav class="book-container">
         <a href="index.html">
+          <div class="cart-wrapper">
           <img src="content/svg/kurv.svg" alt="kurv icon" class="kurv-icon" />
+          <span class="basket-count">0</span>
+          </div>
         </a>
-        <a href="#" class="ctabtn">BOOK</a>
+        <!--- book knap --->
+        <a href="#" class="ctabtn">BOOK </a>
       </nav>
     </header>
-    <!-- Menuen - lige under header -->
-    <div class="slide-nav" id="site-slide-nav" aria-hidden="true">
-      <!-- Mørk / sløret overlay på resten af siden når menu er åben -->
-      <div class="overlay-bg" data-close></div>
-
-      <!-- Selve menu content -->
-      <nav class="slidemenu-content" aria-label="Primær navigation">
-        <ul>
-          <li><a href="menu.html">MENU</a></li>
-          <li><a href="event.html">EVENT</a></li>
-          <li><a href="shop.html">WEBSHOP</a></li>
-          <li><a href="about.html">ABOUT</a></li>
-        </ul>
-      </nav>
-    </div>
     <main>
-      <section class="shop_section">
-        <div class="shop_grid-1-1">
-          <div>
-            <div class="letter-margin-1">
-              <h1>
-                A TASTE OF CHIBA <br />
-                AT HOME
-              </h1>
-              <p>
-                Experience the authentic flavors of Chiba without leaving your
-                home. From fresh coastal specialties to traditional regional
-                dishes, Chiba’s culinary heritage brings together simplicity,
-                craftsmanship, and natural ingredients.
-              </p>
-            </div>
+      <div class="shop_grid-1-1">
+        <div>
+          <div class="letter-margin-1">
+            <h1>
+              A TASTE OF CHIBA <br />
+              AT HOME
+            </h1>
+            <p>
+              Experience the authentic flavors of Chiba without leaving your
+              home. From fresh coastal specialties to traditional regional
+              dishes, Chiba’s culinary heritage brings together simplicity,
+              craftsmanship, and natural ingredients.
+            </p>
           </div>
+        </div>
 
-          <div>
-            <div class="letter-margin-1">
-              <img src="content/img/cookbook.webp" alt="cookbook" />
+        <div class="cookbook-item">
+          <div class="letter-margin-1">
+            <div class="image-wrapper">
+              <img
+                src="content/img/cookbook.webp"
+                alt="cookbook"
+                class="hover_shop"
+              />
+              <button class="btn-shop" type="button" aria-label="Add to cart">
+                <span>ADD TO CART</span>
+                <span>DKK 299</span>
+              </button>
             </div>
-            <div class="letter-margin-2">
-              <h2>COOKBOOK</h2>
-              <p>
-                Homemade Dim Sum & Indo‑Chinese Flavors, the definitive recipe
-                collection inspired by the beloved Chiba restaurant.
-              </p>
-            </div>
+          </div>
+          <div class="letter-margin-2">
+            <h2>COOKBOOK</h2>
+            <p>
+              Homemade Dim Sum & Indo‑Chinese Flavors, the definitive recipe
+              collection inspired by the beloved Chiba restaurant.
+            </p>
           </div>
         </div>
-      </section>
-      <section class="shop_section">
-        <div class="shop_grid-1-1-1">
-          <div>
-            <img src="content/img/soy_sauce.webp" alt="soysauce" />
-            <div class="letter-margin-2">
-              <h2>SOY SAUCE</h2>
-              <p>
-                A rich, savory soy sauce crafted in small batches using
-                traditional fermentation.
-              </p>
-            </div>
+      </div>
+      <div class="shop_grid-1-1-1">
+        <div>
+          <div class="image-wrapper">
+            <img
+              src="content/img/soy_sauce.webp"
+              alt="soysauce"
+              class="hover_shop"
+            />
+            <button class="btn-shop" type="button" aria-label="Add to cart">
+              <span>ADD TO CART</span>
+              <span>DKK 199</span>
+            </button>
           </div>
-          <div>
-            <img src="content/img/sweet_chili_sauce.webp" alt="sweetchili" />
-            <div class="letter-margin-2">
-              <h2>SWEET CHILI</h2>
-              <p>
-                Handmade with fresh red chilies, garlic, and carefully balanced
-                spices, then slow-cooked to intensify flavor.
-              </p>
-            </div>
-          </div>
-          <div>
-            <img src="content/img/spicy_chili.webp" alt="spicychili" />
-            <div class="letter-margin-2">
-              <h2>SPICY CHILI SAUCE</h2>
-              <p>
-                A bold, fiery homemade chili sauce crafted from fresh red
-                chilies, garlic, and natural spices.
-              </p>
-            </div>
+          <div class="letter-margin-2">
+            <h2>SOY SAUCE</h2>
+            <p>
+              A rich, savory soy sauce crafted in small batches using
+              traditional fermentation.
+            </p>
           </div>
         </div>
-      </section>
+        <div>
+          <div class="image-wrapper">
+            <img
+              src="content/img/sweet_chili_sauce.webp"
+              alt="sweetchili"
+              class="hover_shop"
+            />
+            <button class="btn-shop" type="button" aria-label="Add to cart">
+              <span>ADD TO CART</span>
+              <span>DKK 199</span>
+            </button>
+          </div>
+          <div class="letter-margin-2">
+            <h2>SWEET CHILI SAUCE</h2>
+            <p>
+              Handmade with fresh red chilies, garlic, and carefully balanced
+              spices, then slow-cooked to intensify flavor.
+            </p>
+          </div>
+        </div>
+        <div>
+          <div class="image-wrapper">
+            <img
+              src="content/img/spicy_chili.webp"
+              alt="spicychili"
+              class="hover_shop"
+            />
+            <button class="btn-shop" type="button" aria-label="Add to cart">
+              <span>ADD TO CART</span>
+              <span>DKK 199</span>
+            </button>
+          </div>
+          <div class="letter-margin-2">
+            <h2>SPICY CHILI SAUCE</h2>
+            <p>
+              A bold, fiery homemade chili sauce crafted from fresh red chilies,
+              garlic, and natural spices.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
-    <!-- Footer-->
-    <!-- Link til JS -->
-    <script defer src="javascript/menu.js"></script>
+    <footer>
+      <div class="info" id="vester">
+        <h2>ADDRESS</h2>
+        <p>Vesterbrogade 56</p>
+      </div>
+      <p class="info" id="copen">1620 Copenhagen V</p>
+      <p class="info" id="nr">+45 93 98 38 88</p>
+
+      <div class="info" id="open">
+        <h2>OPENING HOURS</h2>
+        <p>Tue-Sat: 17-23</p>
+      </div>
+      <h2 class="info" id="rapport">KONTROL<wbr>RAPPORT</wbr></h2>
+      <h2 class="info" id="contact">CONTACT</h2>
+
+      <hr class="vertical-line" />
+      <hr class="vertical-line2" />
+
+      <div class="info" id="logo">
+        <img src="content/svg/logo1.svg" alt="" />
+      </div>
+
+      <div class="info" id="sociale">
+        <a href="https://www.facebook.com/p/CHIBA-61567063765268/">
+          <svg
+            width="37"
+            height="37"
+            viewBox="0 0 37 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M33.0357 0H3.96429C2.91289 0 1.90456 0.417665 1.16111 1.16111C0.417665 1.90456 0 2.91289 0 3.96429L0 33.0357C0 34.0871 0.417665 35.0954 1.16111 35.8389C1.90456 36.5823 2.91289 37 3.96429 37H15.2997V24.4208H10.0965V18.5H15.2997V13.9873C15.2997 8.8544 18.3555 6.01911 23.0358 6.01911C25.2773 6.01911 27.6212 6.41884 27.6212 6.41884V11.4568H25.0386C22.494 11.4568 21.7003 13.0359 21.7003 14.6555V18.5H27.3808L26.4723 24.4208H21.7003V37H33.0357C34.0871 37 35.0954 36.5823 35.8389 35.8389C36.5823 35.0954 37 34.0871 37 33.0357V3.96429C37 2.91289 36.5823 1.90456 35.8389 1.16111C35.0954 0.417665 34.0871 0 33.0357 0Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/dear.chiba/">
+          <svg
+            width="38"
+            height="37"
+            viewBox="0 0 38 37"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M19.0042 9.01367C13.6126 9.01367 9.26369 13.2491 9.26369 18.5C9.26369 23.7509 13.6126 27.9863 19.0042 27.9863C24.3959 27.9863 28.7448 23.7509 28.7448 18.5C28.7448 13.2491 24.3959 9.01367 19.0042 9.01367ZM19.0042 24.6674C15.52 24.6674 12.6716 21.9015 12.6716 18.5C12.6716 15.0985 15.5115 12.3326 19.0042 12.3326C22.4969 12.3326 25.3369 15.0985 25.3369 18.5C25.3369 21.9015 22.4885 24.6674 19.0042 24.6674ZM31.4152 8.62563C31.4152 9.8558 30.3979 10.8383 29.1432 10.8383C27.8801 10.8383 26.8713 9.84754 26.8713 8.62563C26.8713 7.40372 27.8886 6.41298 29.1432 6.41298C30.3979 6.41298 31.4152 7.40372 31.4152 8.62563ZM37.8665 10.8713C37.7224 7.90734 37.0272 5.28188 34.7977 3.11877C32.5766 0.955651 29.8808 0.278646 26.8374 0.130035C23.7007 -0.0433449 14.2993 -0.0433449 11.1626 0.130035C8.12772 0.270389 5.4319 0.947395 3.20234 3.11051C0.972783 5.27362 0.286113 7.89908 0.133519 10.863C-0.0445064 13.9178 -0.0445064 23.0739 0.133519 26.1287C0.277635 29.0927 0.972783 31.7181 3.20234 33.8812C5.4319 36.0443 8.11924 36.7214 11.1626 36.87C14.2993 37.0433 23.7007 37.0433 26.8374 36.87C29.8808 36.7296 32.5766 36.0526 34.7977 33.8812C37.0187 31.7181 37.7139 29.0927 37.8665 26.1287C38.0445 23.0739 38.0445 13.9261 37.8665 10.8713ZM33.8143 29.4064C33.153 31.0246 31.873 32.2713 30.2029 32.9235C27.7021 33.8895 21.7679 33.6666 19.0042 33.6666C16.2406 33.6666 10.2979 33.8812 7.80558 32.9235C6.144 32.2795 4.86392 31.0329 4.1942 29.4064C3.20234 26.9708 3.43123 21.1915 3.43123 18.5C3.43123 15.8085 3.21082 10.0209 4.1942 7.59361C4.85544 5.9754 6.13553 4.72872 7.80558 4.07648C10.3064 3.11051 16.2406 3.33343 19.0042 3.33343C21.7679 3.33343 27.7105 3.11877 30.2029 4.07648C31.8645 4.72046 33.1446 5.96714 33.8143 7.59361C34.8061 10.0292 34.5772 15.8085 34.5772 18.5C34.5772 21.1915 34.8061 26.9791 33.8143 29.4064Z"
+              fill="black"
+            />
+          </svg>
+        </a>
+      </div>
+      <div class="info" id="copy">
+        <p>2025 Copyright CHIBA</p>
+      </div>
+    </footer>
+    <script src="javascript/shop.js"></script>
   </body>
 </html>
