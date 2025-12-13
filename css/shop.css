@@ -20,6 +20,9 @@ main {
   width: 100%;
   height: auto;
   display: block;
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
 }
 
 .hover_shop:hover {
@@ -40,7 +43,7 @@ main {
   background: var(--color-cta-bg);
   color: var(--color-text-secondary);
   margin-bottom: 25px;
-  padding: 15px 30px;
+  padding: 10px 30px;
   align-self: end;
   justify-self: center;
   pointer-events: auto;
@@ -56,11 +59,8 @@ main {
   width: 85%;
   max-width: 350px;
   gap: 20px;
-  opacity: 0; /* Hidden by default */
-  transition: opacity 0.3s ease, transform 0.3s ease;
-  white-space: nowrap;
-  position: relative;
-  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .btn-shop span {
@@ -73,11 +73,7 @@ main {
 
 .image-wrapper:hover .btn-shop {
   opacity: 1; /* Visible on hover */
-}
-
-.hover_shop {
-  position: relative;
-  z-index: 1;
+  transform: translateY(0); /* Slide to normal position */
 }
 
 .letter-margin-1 {
@@ -115,13 +111,24 @@ p {
 }
 
 @media (min-width: 800px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .cookbook-item {
+    transform: translateX(220px);
+  }
+
   .shop_grid-1-1 {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 0px 0px;
   }
 
   .btn-shop {
-    padding: 15px 30px;
+    padding: 10px 30px;
     font-size: 16px;
     width: 85%;
     max-width: 350px;
@@ -133,22 +140,15 @@ p {
 
   .hover_shop {
     cursor: pointer;
-    max-width: 380px;
-    width: 100%;
-    height: auto;
     display: block;
   }
 
   .shop_grid-1-1-1 {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding: 0 0px;
     gap: 50px;
-  }
-
-  main {
-    max-width: 1200px;
-    margin: 0 auto;
+    padding: 0px 25px;
+    max-width: 100%;
   }
 
   p {
