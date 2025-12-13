@@ -57,15 +57,16 @@
 /* CTABTN - DESKTOP header */
 @media screen and (min-width: 800px) {
   .ctabtn {
-    padding: 15px 35px;
-    font-size: 1.1rem;
+    padding: 10px 35px;
+    font-size: 1rem;
     letter-spacing: 0.03em;
 
     /* cta desktop til andre knapper */
-    .ctabtn-2 {
-      padding: 35px 55px;
-      font-size: 1.5rem;
-      letter-spacing: 0.03em;
-    }
+  }
+
+  .ctabtn-2 {
+    padding: 10px 35px;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
   }
 }
