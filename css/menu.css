@@ -1,0 +1,29 @@
+:root {
+  /* background colors */
+  --color-bg-primary: #ffffff;
+  --color-bg-secondary: #d9d5cf;
+}
+
+.var {
+  font-family: "Anton", sans-serif;
+  line-height: normal line-spacing size 20px;
+  color: black;
+  align-items: center;
+}
+
+.h2 {
+  font-family: "Epilogue", sans-serif;
+}
+
+
+
+
+
+
+/* CTABTN - DESKTOP  */
+@media (min-width: 800px) {
+  .ctabtn {
+    padding: 15px 35px;
+    font-size: 16px;
+  }
+}
