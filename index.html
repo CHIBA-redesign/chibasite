@@ -282,34 +282,87 @@
         </div>
       </section>
 
-      <section class="index-carrousel">
-        <img
-          src="content/img/three_plates.webp"
-          alt="dumplings in steambasket"
-        />
-        <img
-          src="content/img/bowl_hand.webp"
-          alt="dinner party passing plates to each other"
-        />
-        <img
-          src="content/img/serving_plate.webp"
-          alt="a plated dish carried by waiter"
-        />
-        <img src="content/img/drinks_table.webp" alt="cocktails on a table" />
+      <section class="index-carousel">
+        <div class="carousel-inner">
+          <img
+            src="content/img/three_plates.webp"
+            alt="dumplings in steambasket"
+            loading="lazy"
+          />
+          <img
+            src="content/img/bowl_hand.webp"
+            alt="dinner party passing plates to each other"
+            loading="lazy"
+          />
+          <img
+            src="content/img/serving_plate.webp"
+            alt="a plated dish carried by waiter"
+            loading="lazy"
+          />
+          <img
+            src="content/img/drinks_table.webp"
+            alt="cocktails on a table"
+            loading="lazy"
+          />
 
-        <img src="content/img/kitchen_fire.webp" alt="pan with fire" />
-        <img
-          src="content/img/serving_basket.webp"
-          alt="people sharing a steam basket with food"
-        />
+          <img
+            src="content/img/kitchen_fire.webp"
+            alt="pan with fire"
+            loading="lazy"
+          />
+          <img
+            src="content/img/serving_basket.webp"
+            alt="people sharing a steam basket with food"
+            loading="lazy"
+          />
 
-        <img src="content/img/curtain_chiba.webp" alt="draped curtains" />
-        <img
-          src="content/img/sharing_hands.webp"
-          alt="people sharing dishes at CHIBA"
-        />
+          <img
+            src="content/img/curtain_chiba.webp"
+            alt="draped curtains"
+            loading="lazy"
+          />
+          <img
+            src="content/img/sharing_hands.webp"
+            alt="people sharing dishes at CHIBA"
+            loading="lazy"
+          />
 
-        <img src="content/img/food_hand.webp" alt="hands sharing food" />
+          <img
+            src="content/img/food_hand.webp"
+            alt="hands sharing food"
+            loading="lazy"
+          />
+        </div>
+        <button class="previous">
+          <svg
+            width="76"
+            height="60"
+            viewBox="0 0 76 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="76" height="60" fill="#D9D9D9" />
+            <path
+              d="M12.2929 29.2929C11.9024 29.6834 11.9024 30.3166 12.2929 30.7071L18.6569 37.0711C19.0474 37.4616 19.6805 37.4616 20.0711 37.0711C20.4616 36.6805 20.4616 36.0474 20.0711 35.6569L14.4142 30L20.0711 24.3431C20.4616 23.9526 20.4616 23.3195 20.0711 22.9289C19.6805 22.5384 19.0474 22.5384 18.6569 22.9289L12.2929 29.2929ZM62 30L62 29L13 29L13 30L13 31L62 31L62 30Z"
+              fill="black"
+            />
+          </svg>
+        </button>
+        <button class="next">
+          <svg
+            width="76"
+            height="60"
+            viewBox="0 0 76 60"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <rect width="76" height="60" fill="#D9D9D9" />
+            <path
+              d="M62.7071 30.7071C63.0976 30.3166 63.0976 29.6834 62.7071 29.2929L56.3431 22.9289C55.9526 22.5384 55.3195 22.5384 54.9289 22.9289C54.5384 23.3195 54.5384 23.9526 54.9289 24.3431L60.5858 30L54.9289 35.6569C54.5384 36.0474 54.5384 36.6805 54.9289 37.0711C55.3195 37.4616 55.9526 37.4616 56.3431 37.0711L62.7071 30.7071ZM13 30V31L62 31V30V29L13 29V30Z"
+              fill="black"
+            />
+          </svg>
+        </button>
       </section>
 
       <section class="index-grid-2 index-bg-change">
@@ -325,21 +378,30 @@
 
         <div class="grid-shop-cards">
           <div class="shop-card">
-            <img src="content/img/kitchen_fire.webp" alt="dummy" />
+            <img
+              src="content/img/cookbook.webp"
+              alt="Photo of CHIBA cookbook"
+            />
             <div>
               <h2>COOKBOOK</h2>
               <p>A selection of CHIBA's most <br />beloved dishes.</p>
             </div>
           </div>
           <div class="shop-card">
-            <img src="content/img/kitchen_fire.webp" alt="dummy" />
+            <img
+              src="content/img/sweet_chili_sauce.webp"
+              alt="Photo of CHIBAS chili sauce"
+            />
             <div>
               <h2>CHILI SAUCE</h2>
               <p>Handmade with fresh <br />ingredients and spices.</p>
             </div>
           </div>
           <div class="shop-card">
-            <img src="content/img/kitchen_fire.webp" alt="dummy" />
+            <img
+              src="content/img/spicy_chili.webp"
+              alt="Photo of CHIBAS spicy chili sauce"
+            />
             <div>
               <h2>SPICY CHILI SAUCE</h2>
               <p>
@@ -423,6 +485,7 @@
     <!-- Footer-->
     <!-- Link til JS -->
     <script defer src="javascript/menu.js"></script>
+    <script defer src="javascript/index.js"></script>
   </body>
 </html>
 <!--- Favicon --->
