@@ -15,12 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <meta name="robots" content="noindex" />
   </head>
   <body>
-    <!--- Header --->
     <header class="menu">
       <nav class="burgermenu-container">
-        <!-- Burgerknap -->
         <button class="burgermenu-knap" type="button" aria-label="Åben menu">
           <img
             src="content/svg/burgermenu.svg"
@@ -62,7 +61,10 @@
     </div>
     <main>
       <section class="herobanner">
-        <img src="content/img/dummy-hero-image.jpeg" alt="dummy-image" />
+        <img
+          src="content/img/hero-plates2.webp"
+          alt="plate with spring rolls"
+        />
       </section>
       <section class="index-grid-1">
         <div class="left-h1">
@@ -375,40 +377,41 @@
             <a class="ctabtn-2" role="button" href="shop.html">SHOP</a>
           </div>
         </div>
-
-        <div class="grid-shop-cards">
-          <div class="shop-card">
-            <img
-              src="content/img/cookbook.webp"
-              alt="Photo of CHIBA cookbook"
-            />
-            <div>
-              <h2>COOKBOOK</h2>
-              <p>A selection of CHIBA's most <br />beloved dishes.</p>
+        <div class="shop-carousel">
+          <div class="grid-shop-cards shop-carousel-inner">
+            <div class="shop-card">
+              <img
+                src="content/img/cookbook.webp"
+                alt="Photo of CHIBA cookbook"
+                loading="lazy"
+              />
+              <div>
+                <h2>COOKBOOK</h2>
+                <p>A selection of CHIBA's most <br />beloved dishes.</p>
+              </div>
             </div>
-          </div>
-          <div class="shop-card">
-            <img
-              src="content/img/sweet_chili_sauce.webp"
-              alt="Photo of CHIBAS chili sauce"
-            />
-            <div>
-              <h2>CHILI SAUCE</h2>
-              <p>Handmade with fresh <br />ingredients and spices.</p>
+            <div class="shop-card">
+              <img
+                src="content/img/sweet_chili_sauce.webp"
+                alt="Photo of CHIBAS chili sauce"
+                loading="lazy"
+              />
+              <div>
+                <h2>CHILI SAUCE</h2>
+                <p>Handmade with <br />fresh ingredients.</p>
+              </div>
             </div>
-          </div>
-          <div class="shop-card">
-            <img
-              src="content/img/spicy_chili.webp"
-              alt="Photo of CHIBAS spicy chili sauce"
-            />
-            <div>
-              <h2>SPICY CHILI SAUCE</h2>
-              <p>
-                A bold fiery <br />
-                homemade chili.
-              </p>
-            </div>
+            <!-- <div class="shop-card card-mobile">
+              <img
+                src="content/img/soy_sauce.webp"
+                alt="Photo of CHIBAS soy sauce"
+                loading="lazy"
+              />
+              <div>
+                <h2>SOY SAUCE</h2>
+                <p>A rich, savory sauce <br />crafted in small batches.</p>
+              </div>
+            </div> -->
           </div>
         </div>
       </section>
@@ -482,11 +485,8 @@
         </div>
       </footer>
     </main>
-    <!-- Footer-->
-    <!-- Link til JS -->
+
     <script defer src="javascript/menu.js"></script>
     <script defer src="javascript/index.js"></script>
   </body>
 </html>
-<!--- Favicon --->
-<!--- Header --->
