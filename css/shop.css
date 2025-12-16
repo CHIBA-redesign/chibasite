@@ -1,0 +1,197 @@
+main {
+  margin: 0 auto;
+}
+
+.shop_grid-1-1,
+.shop_grid-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  padding: 0px 60px;
+}
+
+.cart-wrapper {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.basket-count {
+  position: absolute;
+  top: -12px;
+  right: 3px;
+  background: var(--color-cta-bg);
+  color: white;
+  font-family: var(--font-prose);
+  font-size: 8px;
+  font-weight: 700;
+  min-width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+}
+
+.shop-item {
+  position: relative;
+  width: 100%;
+}
+
+.hover_shop {
+  cursor: pointer;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  position: relative;
+  z-index: 1;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.hover_shop:hover {
+  opacity: 0.7;
+}
+
+.image-wrapper {
+  display: grid;
+  width: 100%;
+}
+
+.image-wrapper .hover_shop,
+.btn-shop {
+  grid-area: 1 / 1;
+}
+
+.btn-shop {
+  background: var(--color-cta-bg);
+  color: var(--color-text-secondary);
+  margin-bottom: 25px;
+  padding: 10px 30px;
+  align-self: end;
+  justify-self: center;
+  pointer-events: auto;
+  position: relative;
+  z-index: 2;
+  font-size: 15px;
+  font-family: var(--font-prose);
+  letter-spacing: 0.03em;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  width: 85%;
+  max-width: 350px;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.btn-shop span {
+  white-space: nowrap;
+}
+
+.image-wrapper:hover .hover_shop {
+  opacity: 0.7;
+}
+
+.image-wrapper:hover .btn-shop {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.letter-margin-1 {
+  margin-top: 50px;
+}
+
+.letter-margin-2 {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: var(--font-h1);
+  font-size: 2.2rem;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  margin: 50px 0px 50px 0px;
+  color: var(--color-text-primary);
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--font-prose);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-text-primary);
+}
+
+p {
+  font-family: var(--font-prose);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
+
+@media (min-width: 800px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+  .basket-count {
+    font-size: 10px;
+    font-weight: 700;
+    min-width: 20px;
+    height: 20px;
+    padding: 3px;
+    right: 5px;
+    top: -16px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .cookbook-item {
+    transform: translateX(200px);
+  }
+
+  .shop_grid-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 50px;
+    padding: 0px 0px;
+    margin-bottom: 10px;
+  }
+
+  .btn-shop {
+    padding: 10px 30px;
+    font-size: 16px;
+    width: 85%;
+    max-width: 350px;
+  }
+
+  h1 {
+    text-align: start;
+  }
+
+  .hover_shop {
+    cursor: pointer;
+    display: block;
+  }
+
+  .shop_grid-1-1-1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    padding: 0px 25px;
+    max-width: 100%;
+  }
+
+  p {
+    font-family: var(--font-prose);
+    font-size: 1rem;
+  }
+}

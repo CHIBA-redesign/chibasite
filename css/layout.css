@@ -1,4 +1,4 @@
-/* --- Header --- */
+/* ------------ Header ------------ */
 .heading {
   font-family: var(--font-h1);
 }
@@ -9,16 +9,15 @@
 }
 /* --- Header --- */
 .menu {
-  position: fixed;
+  position: sticky;
   top: 0;
-  left: 0;
-  right: 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
   background: white;
   padding: 10px 14px;
-  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1000;
 }
 
 /* Burger-menu knap */
@@ -57,7 +56,7 @@
 /*  Dekstop  */
 @media (min-width: 800px) {
   .burgermenu-icon {
-    height: 40px;
+    height: 30px;
     margin-left: 30px;
   }
   .logo-container {
@@ -74,3 +73,249 @@
     height: 30px;
   }
 }
+/* ------------ Slide in menu ------------  */
+.slide-nav {
+  font-family: var(--font-prose);
+  font-weight: 500;
+  font-size: 1rem;
+}
+/* --- Overlay på bagrund ---  */
+.slide-nav .overlay-bg {
+  /* overlay starter under headerens højde */
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: var(--menu-height, 70px);
+}
+/* --- Overlay på bagrund - active --- */
+.slide-nav.active .overlay-bg {
+  background: rgba(0, 0, 0, 0.6);
+  pointer-events: auto;
+  z-index: 10;
+}
+.slide-nav .overlay-bg {
+  pointer-events: none;
+}
+/* --- Burger knappen --- */
+.burgermenu-knap {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+/* Når menuen er åben, slider den ind*/
+.slide-nav.active .slidemenu-content {
+  transform: translateX(0);
+}
+/* --------- MENU CONTENT --------- */
+.slide-nav .slidemenu-content {
+  /* Går helt ned til skærmens bund */
+  position: fixed;
+  height: calc(100% - var(--menu-height, 70px));
+  /*  bredde af slide in menu*/
+  width: min(320px, 50%);
+  /* Skaber slide in fra venstre side */
+  transform: translateX(-100%);
+  transition: transform 0.32s cubic-bezier(0.2, 0.9, 0.28, 1);
+  background: white;
+  /* Streg mellem slut header og start menu */
+  box-shadow: 2px 0 18px rgba(0, 0, 0, 0.08);
+  /* hvor langt testen står ud mod højre */
+  padding: 22px;
+}
+/* --- Menu links inde i slide in menu --- */
+.slide-nav .slidemenu-content ul {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.slide-nav .slidemenu-content li a {
+  display: block;
+  padding: 10px 6px;
+  color: #212121;
+  text-decoration: none;
+}
+.slide-nav .slidemenu-content li a:hover {
+  color: #bf7497;
+}
+
+.slidemenu-content {
+  z-index: 11;
+}
+
+/* ------------ foooter start ------------*/
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(7, 1fr);
+  padding: 1rem;
+  background-color: #eeedea;
+  font-size: 15px;
+  padding-top: 50px;
+}
+
+p,
+h2 {
+  font-family: var(--font-prose);
+}
+
+.info {
+  padding-left: 40px;
+}
+
+#vester {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  line-height: 1.4;
+}
+
+#copen {
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+#nr {
+  grid-column: 1/2;
+  grid-row: 3 / 4;
+}
+
+#open {
+  grid-column: 1/2;
+  grid-row: 4/5;
+  line-height: 1.4;
+}
+
+#rapport {
+  grid-column: 1/2;
+  grid-row: 5/6;
+  text-decoration-line: underline;
+}
+
+#contact {
+  grid-column: 1/2;
+  grid-row: 6/7;
+  text-decoration-line: underline;
+  overflow-wrap: break-word;
+}
+
+#sociale {
+  grid-column: 1/2;
+  grid-row: 7/8;
+  display: flex;
+  gap: 20px;
+  padding-left: 2.5rem;
+  padding-top: 40px;
+  justify-content: center;
+}
+
+#logo {
+  grid-column: 2/3;
+  grid-row: 1 / 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#copy {
+  grid-column: 2/3;
+  grid-row: 7/8;
+  padding-top: 40px;
+  align-items: center;
+}
+
+.vertical-line {
+  width: 1px;
+  background-color: black;
+  height: 100%;
+  grid-column: 2/3;
+  grid-row: 1/7;
+}
+
+@media (max-width: 800px) {
+  .vertical-line2 {
+    display: none;
+  }
+}
+
+@media (width>=800px) {
+  footer {
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    grid-template-rows: repeat(4, auto);
+  }
+
+  #vester {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    place-self: center;
+  }
+
+  #copen {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    place-self: center;
+  }
+
+  #nr {
+    grid-column: 1/2;
+    grid-row: 3 / 4;
+    place-self: center;
+  }
+
+  #open {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    place-self: center;
+  }
+
+  #rapport {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    place-self: center;
+  }
+
+  #contact {
+    grid-column: 3/4;
+    grid-row: 3/4;
+    place-self: center;
+  }
+
+  #sociale {
+    grid-column: 1/2;
+    grid-row: 4/5;
+  }
+
+  #logo {
+    grid-column: 5/6;
+    grid-row: 1 / 4;
+    width: 300px;
+    place-self: center;
+  }
+
+  #copy {
+    grid-column: 5 / 6;
+    grid-row: 4/5;
+    place-self: center;
+  }
+  .vertical-line {
+    width: 1px;
+    background-color: black;
+    height: 90%;
+    grid-column: 2/3;
+    grid-row: 1/4;
+  }
+
+  .vertical-line2 {
+    width: 1px;
+    background-color: black;
+    height: 90%;
+    grid-column: 4/5;
+    grid-row: 1/4;
+  }
+}
+
+/*foooter start*/

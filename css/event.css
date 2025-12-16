@@ -1,0 +1,335 @@
+main {
+  margin: 0 auto;
+}
+/* ------------- Section 1 ------------- */
+.event_grid-1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+h1 {
+  font-family: var(--font-h1);
+  font-size: 2.5rem;
+  letter-spacing: 0.04em;
+  line-height: 1.3;
+  color: var(--color-text-primary);
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+h2 {
+  font-family: var(--font-prose);
+  font-weight: 700;
+  font-size: 1.3rem;
+  color: var(--color-text-primary);
+}
+p {
+  font-family: var(--font-prose);
+  font-weight: 400;
+  font-size: 0.8rem;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
+
+.event_grid-1 p {
+  max-width: 500px;
+  margin-bottom: 0.8rem;
+}
+
+/* Billede – midtstillet */
+.img-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.img-container img {
+  width: 100%;
+  max-width: 420px;
+}
+
+@media (min-width: 800px) {
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .event_grid-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    text-align: left;
+  }
+  .text-container {
+    align-self: start;
+    margin-top: 0;
+  }
+  h1 {
+    font-size: 2.5rem;
+    text-align: start;
+    margin: 50px 0px 50px 0px;
+  }
+
+  p {
+    font-family: var(--font-prose);
+    font-size: 1rem;
+    margin-bottom: 2rem;
+  }
+  .event_grid-1 p {
+    margin-right: 3rem;
+  }
+  .img-container {
+    transform: translateX(50px);
+    margin: 50px 0px 30px 0px;
+  }
+}
+
+/* ------------- Section 2 - FORMULAR ------------- */
+
+/* ----- Overordnet form box ----- */
+#webform {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  margin: 0.5rem;
+  margin-bottom: 1.5rem;
+  border-radius: 10px;
+  background-color: var(--color-bg-secondary);
+  border: 1px solid #d0d7e6;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+  font-family: var(--font-prose);
+  row-gap: 2.5rem;
+}
+.form-header {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  text-align: center;
+  text-align: center;
+}
+/* Overskift */
+.form-title {
+  margin-bottom: 0;
+}
+/*  info text */
+.form-info {
+  font-size: 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+/* alt tekst lige over felterne */
+.form-heading {
+  font-family: var(--font-prose);
+  font-weight: 700;
+  font-size: 1rem;
+  margin-bottom: 0.3rem;
+  display: block;
+}
+/* tekst felterne */
+#webform input,
+#webform textarea {
+  padding: 0.6rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: var(--color-bg-primary);
+  font-size: 0.9rem;
+  width: 100%;
+}
+/* ----- Venstre kollone (info)----- */
+#name,
+#email,
+#phone {
+  margin-bottom: 1.2rem;
+}
+
+/* ----- Antal folk + dato ----- */
+.number-date {
+  display: grid;
+  gap: 1.6rem;
+}
+/* ----- Confirm checkboxes ----- */
+#webform .checkboxes label {
+  display: grid;
+  grid-template-columns: 20px 1fr;
+  column-gap: 0.6rem;
+  align-items: start;
+  width: 100%;
+  font-family: var(--font-prose);
+  font-weight: 500;
+  font-size: 0.85rem;
+  cursor: pointer;
+  text-align: left;
+}
+
+/* --- SUBMIT knap-- */
+#webform .submit-btn {
+  background: var(--color-cta-bg);
+  color: var(--color-text-secondary);
+  font-weight: bold;
+  padding: 0.9rem 1.5rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  align-self: center;
+  width: 100%;
+  max-width: 340px;
+  text-align: center;
+  margin-top: 1.8rem;
+  transition: background-color 0.2s ease;
+  font-family: var(--font-prose);
+}
+#webform .submit-btn:hover {
+  background: var(--color-cta-bg-hover);
+}
+/* --- ERROR-- */
+#webform input.error,
+#webform textarea.error {
+  border-color: red;
+  background-color: #ffecec;
+}
+#webform .checkboxes label.error {
+  color: red;
+}
+#webform .checkboxes label.error input[type="checkbox"] {
+  outline: 2px solid red;
+  outline-offset: 2px;
+}
+
+/* --- Opsamling / summery -- */
+.summary {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5); /* baggrunden lidt mørkere */
+  /* centrer popup-indholdet */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000; /* ligger oven på alt andet indhold */
+}
+
+.summary-content {
+  background-color: var(--color-bg-secondary);
+  padding: 5rem;
+  max-width: 1100px;
+  border-radius: 10px;
+  width: 90%;
+  /* Gør det muligt at placere luk-knappen relativt til boksen */
+  position: relative;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.summary-content h2 {
+  font-size: 1rem;
+  margin-bottom: 0.4rem;
+  white-space: nowrap; /* forhindrer linjeskift */
+  overflow: hidden; /* skjuler overskydende tekst */
+  text-overflow: ellipsis;
+}
+#summary-output p {
+  font-size: 0.8rem;
+  margin-bottom: 0.6rem;
+  white-space: normal;
+  word-break: break-word;
+}
+
+/* --- Luk knappen / kryds */
+
+.close-summary {
+  position: absolute;
+  top: 0.8rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+/* --- Skjuler popop */
+.hidden {
+  display: none;
+}
+/* --- stopper scroll */
+body.summary-open {
+  /* Forhindrer at man kan scrolle bag popup'en */
+  overflow: hidden;
+}
+/* ------------- Desktop ------------- */
+@media (min-width: 800px) {
+  #webform {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: /* Definerer layoutet og hvor hvert element placeres  */
+      "title title"
+      "personal event"
+      "people date"
+      "checkboxes checkboxes"
+      "submit submit";
+    column-gap: 3rem;
+    padding: 2.5rem 5rem;
+    margin-bottom: 5rem;
+  }
+  .form-title {
+    grid-area: title;
+    text-align: center;
+  }
+  .form-info {
+    grid-area: info;
+    text-align: center;
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  /* --- Venstre kollone (info) --- */
+  .personal_info-column {
+    grid-area: personal;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .type_event-column textarea {
+    min-height: 230px; /* højde på boksen */
+    margin-top: 0rem;
+  }
+  /* --- Number of people + dato --- */
+  .number-date {
+    display: contents;
+  }
+
+  /* --- Sumit knap --- */
+  .submit-btn {
+    grid-area: submit;
+    justify-self: center;
+    margin-top: 1rem;
+  }
+  /* --- Opsamling / summery--- */
+  #summary-output {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 5rem;
+    row-gap: 1.2rem;
+    align-items: start;
+    max-width: 900px;
+    margin: 2rem auto;
+    text-align: left;
+  }
+  #summary-output p:nth-child(4) {
+    grid-column: 2;
+    grid-row: 1 / span 5;
+    align-self: start;
+  }
+  #summary-output p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .summary-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.4rem;
+  }
+}

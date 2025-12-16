@@ -22,24 +22,51 @@
   font-family: var(--font-h1);
 }
 
+.underoverskrift {
+  font-family: var(--font-prose);
+  font-weight: 700;
+}
 .prose {
   font-family: var(--font-prose);
   font-weight: 400;
 }
-/* CTABTN - Alle call to action knapper  */
+/* CTA button til header */
 .ctabtn {
-  background: black;
-  color: white;
+  background: var(--color-cta-bg);
+  color: var(--color-text-secondary);
   text-decoration: none;
   padding: 9px 14px;
   font-size: 14px;
   display: inline-block;
   font-family: var(--font-prose);
+  letter-spacing: 0.03em;
 }
-/* CTABTN - DESKTOP  */
-@media (min-width: 800px) {
+
+/* cta button til alle andre knapper evt */
+.ctabtn-2 {
+  background: var(--color-cta-bg);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 14px;
+  display: inline-block;
+  font-family: var(--font-prose);
+  letter-spacing: 0.03em;
+}
+
+/* CTABTN - DESKTOP header */
+@media screen and (min-width: 800px) {
   .ctabtn {
-    padding: 15px 35px;
-    font-size: 16px;
+    padding: 10px 35px;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
+
+    /* cta desktop til andre knapper */
+  }
+
+  .ctabtn-2 {
+    padding: 10px 35px;
+    font-size: 1rem;
+    letter-spacing: 0.03em;
   }
 }
