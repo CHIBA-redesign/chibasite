@@ -70,7 +70,17 @@ section {
 }
 
 .index-flex-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
   text-align: center;
+}
+
+.grid-shop-cards {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 30px;
+  padding-top: 40px;
 }
 
 .index-bg-change {
@@ -89,12 +99,12 @@ section {
 
 .index-grid-3 {
   display: grid;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 40px 20px 90px 20px;
-  gap: 20px;
+  gap: 50px;
 }
 
 .index-flex-event {
@@ -105,6 +115,53 @@ section {
 }
 
 /* } */
+
+/* Karrusel styling */
+
+.index-carousel {
+  width: 100%;
+  position: relative;
+}
+
+.carousel-inner {
+  display: flex;
+  overflow-x: scroll;
+
+  transition: transform 0.5s ease;
+  scroll-snap-type: x mandatory;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
+  img {
+    scroll-snap-align: center;
+  }
+}
+
+.previous,
+.next {
+  position: absolute;
+
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(0, 0, 0, 0);
+  color: white;
+  border: none;
+  padding: 0.5rem 0.5rem;
+  cursor: pointer;
+  font-size: 2rem;
+  z-index: 2;
+}
+
+.previous {
+  left: 15px;
+  display: none;
+}
+.next {
+  right: 15px;
+  display: none;
+}
 
 /* desktop */
 
@@ -132,17 +189,12 @@ section {
     justify-content: center;
   }
 
-  .index-grid-2 {
-    display: flex;
-    flex-direction: row;
-    padding: 50px;
-  }
-
   .index-flex-2 {
-    display: grid;
-    flex-direction: row;
-    padding: 100px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
     text-align: left;
+    padding-top: 90px;
   }
 
   p {
@@ -159,19 +211,21 @@ section {
   .index-grid-2 {
     display: grid;
     grid-template-columns: 1fr 2fr;
-    padding: 125px;
+    padding: 80px;
   }
 
   .grid-shop-cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 50px;
+    padding-top: 40px;
   }
 
   .shop-card {
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 1fr 1fr;
     text-align: left;
+    justify-content: center;
   }
 
   .index-grid-3 {
@@ -191,5 +245,14 @@ section {
   .img-event-move {
     order: -1;
     justify-self: center;
+  }
+
+  .previous {
+    left: 15px;
+    display: block;
+  }
+  .next {
+    right: 15px;
+    display: block;
   }
 }
