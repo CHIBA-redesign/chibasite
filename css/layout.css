@@ -92,6 +92,7 @@
 .slide-nav.active .overlay-bg {
   background: rgba(0, 0, 0, 0.6);
   pointer-events: auto;
+  z-index: 10;
 }
 .slide-nav .overlay-bg {
   pointer-events: none;
@@ -139,6 +140,10 @@
 }
 .slide-nav .slidemenu-content li a:hover {
   color: #bf7497;
+}
+
+.slidemenu-content {
+  z-index: 11;
 }
 
 /* ------------ foooter start ------------*/
