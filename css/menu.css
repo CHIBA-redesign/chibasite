@@ -7,61 +7,48 @@
 /* Fonts */
 h1 {
   font-family: "Anton", sans-serif;
-  line-height: normal line-spacing size 20px;
+  font-size: 40px;
+  line-height: 1;
   color: black;
-  align-items: center;
   padding: 30px;
+  text-align: center;
 }
 
 h2 {
   font-family: "Epilogue", sans-serif;
-  size: 20px;
+  font-size: 30px;
   color: black;
-  align-items: center;
   padding-bottom: 20px;
+  text-align: center;
 }
 
 h3 {
   font-family: "Epilogue", sans-serif;
-  size: 20px;
+  font-size: 20px;
   color: black;
-  align-items: center;
+  text-align: center;
 }
 
 h4 {
   font-family: "Epilogue", sans-serif;
-  size: 15px;
+  font-size: 15px;
   color: black;
-  align-items: center;
+  text-align: center;
 }
 
 p {
   font-family: "Epilogue", sans-serif;
-  size: 11px;
-  font-weight: thin;
+  font-size: 11px;
+  font-weight: 300;
   color: black;
-  align-items: center;
   padding-bottom: 25px;
+  text-align: center;
 }
 
-/* ------grids---------- */
+/* ------Media desktop---------- */
 
-/* .grid_1-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  padding-top: 50px;
-}
-
-.grid_2-1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  text-align: center;
-  padding-top: 50px;
-} */
-
-@media (width>=800px) {
-  .grid_1-1-1 {
+@media (min-width: 800px) {
+  .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
@@ -81,22 +68,25 @@ p {
 }
 
 .flex-div {
-  display: flex column;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 .flex-wok {
   display: flex;
-  display: flex row;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  padding-top: 20px;
 }
 
 .dish h3,
-h2,
-h1,
-h4,
-p {
+.dish h2,
+.dish h1,
+.dish h4,
+.dish p {
   display: flex;
-  display: flex row;
+  flex-direction: row;
   justify-content: center;
 }

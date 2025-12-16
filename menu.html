@@ -2,10 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Menu</title>
-    <link rel="icon" type="chibafavicon" href="content/svg/CHIBA_LOGO.svg" />
+    <link rel="icon" type="image/svg+xml" href="content/svg/fav11i.svg" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
@@ -16,80 +15,105 @@
       href="https://fonts.googleapis.com/css2?family=Anton&family=Epilogue:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
-    
   </head>
   <body>
+    <!-- Header -->
+    <header class="menu">
+      <nav class="burgermenu-container">
+        <button class="burgermenu-knap" type="button" aria-label="Åben menu">
+          <img
+            src="content/svg/burgermenu.svg"
+            alt="burger menu knap"
+            class="burgermenu-icon"
+          />
+        </button>
+      </nav>
+
+      <div class="logo-container">
+        <a href="index.html">
+          <img src="content/svg/logo1.svg" alt="logo" class="logo-icon" />
+        </a>
+      </div>
+
+      <nav class="book-container">
+        <a href="index.html">
+          <img src="content/svg/kurv.svg" alt="kurv icon" class="kurv-icon" />
+        </a>
+        <a href="#" class="ctabtn">BOOK</a>
+      </nav>
+    </header>
+
+    <div class="slide-nav" id="site-slide-nav" aria-hidden="true">
+      <div class="overlay-bg" data-close></div>
+      <nav class="slidemenu-content" aria-label="Primær navigation">
+        <ul>
+          <li><a href="menu.html">MENU</a></li>
+          <li><a href="event.html">EVENT</a></li>
+          <li><a href="shop.html">WEBSHOP</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <!-- Section 1. WOK -->
-     <div class="container">
     <section class="WOK">
-      <div>
-        <div class="flex-wok">
-          <h1>WOK</h1>
+      <div class="flex-wok">
+        <h1>WOK</h1>
+      </div>
+      <div class="menu1">
+        <div class="flex-div">
+          <div class="dish">
+            <h3>炒飯 / FRIED RICE 150</h3>
+            <p>
+              JASMINE RICE, SCALLOP, TIGER PRAWN, GREEN BEANS, EGG, CARROT,
+              SPRING ONION
+            </p>
+          </div>
+          <div class="dish">
+            <h3>炒河 / FRIED RIVER NOODLES 130</h3>
+            <p>RICE NOODLES, SOY BEAN SPROUTS, SPRING ONION, SOY, EGG (V)</p>
+          </div>
+          <div class="dish">
+            <h3>宮保雞丁 / KUNGPAO 170</h3>
+            <p>
+              STIR-FRIED CHILI, CHICKEN OR TOFU, SZECHUAN PEPPER, PEANUTS,
+              SPRING ONION
+            </p>
+          </div>
         </div>
 
-        <div class="menu1">
-          <div class="flex-div">
-            <div class="dish">
-              <h3>炒飯 / FRIED RICE 150</h3>
-              <p>
-                JASMINE RICE, SCALLOP, TIGER PRAWN, GREEN BEANS, EGG, CARROT,
-                SPRING ONION
-              </p>
-            </div>
-
-            <div class="dish">
-              <h3>炒河 / FRIED RIVER NOODLES 130</h3>
-              <p>RICE NOODLES, SOY BEAN SPROUTS, SPRING ONION, SOY, EGG (V)</p>
-            </div>
-
-            <div class="dish">
-              <h3>宮保雞丁 / KUNGPAO 170</h3>
-              <p>
-                STIR-FRIED CHILI, CHICKEN OR TOFU, SZECHUAN PEPPER, PEANUTS,
-                SPRING ONION
-              </p>
-            </div>
+        <div class="flex-div">
+          <div class="dish">
+            <h3>黑椒牛柳 / BLACK PEPPER 170</h3>
+            <p>
+              STIR-FRIED BEEF OR MUSHROOM, BLACK PEPPER SAUCE, GREEN BEANS,
+              PEPPER MIX
+            </p>
           </div>
-
-          <div class="flex-div">
-            <div class="dish">
-              <h3>黑椒牛柳 / BLACK PEPPER 170</h3>
-              <p>
-                STIR-FRIED BEEF OR MUSHROOM, BLACK PEPPER SAUCE, GREEN BEANS,
-                PEPPER MIX
-              </p>
-            </div>
-
-            <div class="dish">
-              <h3>陳皮雞 / ORANGE 170</h3>
-              <p>
-                DEEP FRIED CHICKEN OR TOFU, KUMQUAT, ORANGE VANILLA SAUCE, CHILI
-                PEPPER, ONION
-              </p>
-            </div>
-
-            <div class="dish">
-              <h3>咕嚕肉 / SWEET & SOUR 170</h3>
-              <p>
-                DEEP-FRIED PORK OR MUSHROOMS, CHILI, PINEAPPLE, BELL PEPPER,
-                ONION
-              </p>
-            </div>
+          <div class="dish">
+            <h3>陳皮雞 / ORANGE 170</h3>
+            <p>
+              DEEP FRIED CHICKEN OR TOFU, KUMQUAT, ORANGE VANILLA SAUCE, CHILI
+              PEPPER, ONION
+            </p>
+          </div>
+          <div class="dish">
+            <h3>咕嚕肉 / SWEET & SOUR 170</h3>
+            <p>
+              DEEP-FRIED PORK OR MUSHROOMS, CHILI, PINEAPPLE, BELL PEPPER, ONION
+            </p>
           </div>
         </div>
       </div>
     </section>
 
-
- 
-    <!-- Section 2 DUMPLINGS-->
+    <!-- Section 2. DUMPLINGS -->
     <section class="DUMPLINGS">
-      <div>
-        <div class="flex-wok">
-          <h1>DUMPLINGS</h1>
-        </div>
-        
-   ><div class="menu1">
+      <div class="flex-wok">
+        <h1>DUMPLINGS</h1>
+      </div>
+
+      <div class="menu1">
         <h2>STEAMED</h2>
         <div class="dish">
           <h3>叉燒包 / BBQ BUNS (1 PC) 40</h3>
@@ -97,10 +121,10 @@
         </div>
         <div class="dish">
           <h3>素包 / BOK CHOY BAO(2 PCS) 80</h3>
-          <p>GLASS NOODLES, SALTED BOK CHOY,BLACK MUSHROOM (VG)</p>
+          <p>GLASS NOODLES, SALTED BOK CHOY, BLACK MUSHROOM (VG)</p>
         </div>
         <div class="dish">
-          <h3>燒賣 / SHU MAI DUMPLINGS (3 PCS) 8</h3>
+          <h3>燒賣 / SHU MAI DUMPLINGS (3 PCS) 80</h3>
           <p>CHICKEN, KING OYSTER MUSHROOM</p>
         </div>
         <div class="dish">
@@ -119,13 +143,10 @@
           <h3>黑醋雲吞 / BLACK VINEGAR WONTONS(3 PCS) 80</h3>
           <p>TIGER PRAWNS, CHICKEN, BLACK VINEGAR, KOREAN PEPPER SOY SAUCE</p>
         </div>
-      
-      
-  
+      </div>
 
-    <section class="flex-div">
-      <div>
-        <h1>FRIED</h1>
+      <div class="flex-div">
+        <h2>FRIED</h2>
         <div class="dish">
           <h3>潮州粉粿 / CHIU CHOW DUMPLINGS(3 PCS) 80</h3>
           <p>
@@ -139,188 +160,119 @@
             MUSHROOM
           </p>
         </div>
-
         <div class="dish">
           <h3>咸水角 / GLUTINOUS RICE DUMPLINGS (3 PCS) 80</h3>
           <p>TIGER PRAWN, FERMENTED SALTED CHINESE RADISH, CHICKEN, SHIITAKE</p>
         </div>
-
         <div class="dish">
           <h3>炸雲吞 / FRIED WONTONS (3 PCS) 80</h3>
           <p>CHICKEN, PRAWNS, KING OYSTER MUSHROOM</p>
         </div>
-
         <div class="dish">
           <h3>素食春捲 / TOFU ROLLS (3 PCS) 80</h3>
           <p>TOFU, WATER CHESTNUT, VERMICELLI, BLACK MUSHROOM (V)</p>
         </div>
 
-        <h1>PAN-FRIED</h1>
-
+        <h2>PAN-FRIED</h2>
         <div class="dish">
           <h3>生煎包 / SHANGHAI BUNS (3 PCS) 80</h3>
           <p>PORK, CABBAGE, BLACK MUSHROOMS</p>
         </div>
-
         <div class="dish">
           <h3>餃子 / PORTINI GAO (3 PCS) 80</h3>
           <p>PORTINI DUMPLING, SPRING ONION (VG)</p>
         </div>
-        </div>
-      
+      </div>
     </section>
 
-    <!-- Section 3 ROASTED-->
+    <!-- Section 3. ROASTED -->
     <section class="ROASTED">
-      <div>
-        <div class="flex-wok">
+      <div class="flex-wok">
         <h1>ROASTED</h1>
-        </div>
-
-         <div class="dish">
+      </div>
+      <div class="dish">
         <h3>烤鴨 / DUCK (HALF) 375</h3>
-        <p>PEKING DUCK SERVED ON THE BONE, BAO, MAI LO KUE PLUM SAUCE, BOK CHOY
-          KIMCHI</p>
-           </div>
-        <div class="dish">
-        <h2>& MORE</h2>
-        <div>
-        <div class="dish">
+        <p>
+          PEKING DUCK SERVED ON THE BONE, BAO, MAI LO KUE PLUM SAUCE, BOK CHOY
+          KIMCHI
+        </p>
+      </div>
+      <div class="dish">
+        <h3>& MORE</h3>
+      </div>
+      <div class="dish">
         <h3>抄面 / PEANUT NOODLES 120</h3>
         <p>CUT NOODLES IN CARAMELIZED PEANUT-CHILI SAUCE</p>
-        <div>
-            
-        <div class="dish">
+      </div>
+      <div class="dish">
         <h3>雲吞湯 / WONTON SOUP 80</h3>
         <p>DUMPLING SOUP WITH CHICKEN, PRAWNS, CHANTERELLES, FRESH GINGER</p>
-        <div>  
-        
-        <div class="dish">
+      </div>
+      <div class="dish">
         <h3>拍黃瓜 / CUCUMBER SALAD 70</h3>
         <p>
           CUCUMBER, RED ONION, KUMQUAT TOSSED IN SOY-CHILI-SESAME DRESSING (VG)
         </p>
-        </div>
-        <div class="dish">
+      </div>
+      <div class="dish">
         <h3>蒜蓉炒白菜 / BOK CHOY 100</h3>
         <p>STIR-FRIED BOK CHOY DRIZZLED WITH FRIED GARLIC (VG)</p>
-        </div>
-        <div class="dish">
-        <h3>炸面 / FRIED BREAD 20</h3>
-        <p>米 / RICE 30</p>
-        </div>
       </div>
-      <div>
+      <div class="dish">
+        <h3>炸面 / FRIED BREAD 20</h3>
+      </div>
+      <div class="dish">
+        <h3>米 / RICE 30</h3>
+      </div>
+    </section>
 
-       <!-- Section 4 Dessert-->    
-        <div section class="Dessert">
-      <div class="flex-div">      
+    <!-- Section 4. Dessert -->
+    <section class="dessert">
+      <div class="flex-div">
         <h1>DESSERTS</h1>
-        </div>
-        <div class="dish">
+      </div>
+      <div class="dish">
         <h4>PISTACHIO TIRAMISU 90</h4>
         <h4>BLACK SESAME & PASSION FRUIT PANNA COTTA 90</h4>
         <h4>VANILLA BASQUE CHEESECAKE 90</h4>
-        </div>
       </div>
-  
-    <!-- Section 5 DRINKS-->
-    <section class="DRINKS">
-  
-         <div class="flex-wok">  
-        <h1>DRINKS</h1>
-        </div>
+    </section>
 
-<div class="menu1">
-       <div class="flex-div">
-        <h2>COCKTAILS</h2>
-        </div>
-     
-        <h3>YCHEE MARTINI 95</h3>
-        <p>VODKA, DRY VERMOUTH, LYCHEE</p>
-        <h3>RED DRAGON 95</h3>
-        <p>GIN, RASPBERRY, SAKE, YUZU</p>
-        <h3>YUZU BLISS 95</h3>
-        <p>GIN, LIMONCELLO, YUZU</p>
-        <h3>GOLDEN BREEZE 90</h3>
-        <p>RUM, PINEAPPLE, LIME</p>
-        <h3>KOWLOON EXPRESS 95</h3>
-        <p>GIN TONIC 95</p>
-   
+    <!-- Footer -->
+    <footer>
+      <div class="info" id="vester">
+        <h2>ADDRESS</h2>
+        <p>Vesterbrogade 56</p>
+      </div>
+      <p class="info" id="copen">1620 Copenhagen V</p>
+      <p class="info" id="nr">+45 93 98 38 88</p>
 
-      <h1>BEERS</h1>
-      <h4>CHINESE TSHINGTAO PILSNER 60</h4>
-      <h4>JAPANESE SAPPORO 60</h4>
-      <h4>VIETNAMESE SAIGON 60</h4>
-      <h4>IPA 65</h4>
-      <h4>BLOND 65</h4>
-      <h4>0,0% 65</h4>
-      
-     
+      <div class="info" id="open">
+        <h2>OPENING HOURS</h2>
+        <p>Tue-Sat: 17-23</p>
+      </div>
+      <h2 class="info" id="rapport">KONTROL&shy;RAPPORT</h2>
+      <h2 class="info" id="contact">CONTACT</h2>
 
+      <hr class="vertical-line" />
+      <hr class="vertical-line2" />
 
+      <div class="info" id="logo">
+        <img src="content/svg/logo1.svg" alt="" />
+      </div>
 
-        <div class="flex-div">
-        <h1>REFRESHMENTS</h1>
-        </div>
+      <div class="info" id="sociale">
+        <a href="https://www.facebook.com/p/CHIBA-61567063765268/">
+          <!-- facebook svg -->
+        </a>
+        <a href="https://www.instagram.com/dear.chiba/">
+          <!-- instagram svg -->
+        </a>
+      </div>
 
-         <div class="flex-div">
-        <h3>CHIBA 60</h3>
-        <p>LITCHI, BASIL SEED, SODA</p>
-        </div>
-        
-        <div class="flex-div">
-        <h3>C’DRAGON 60</h3>
-        <p>PINEAPPLE, COCONUT, LEMON</p>
-        </div>
-        
-        <div class="flex-div">
-        <h3>YAM-CHA 60</h3>
-        <p>OOLONG TEA, HONEY, GINGER</p>
-        </div>
-        
-         <div class="flex-div">
-        <h4>COKE / COKE ZERO 50</h4>
-        </div>
-        
-        <div class="flex-div">
-        <h4>
-          SERVICE CHARGE FILTERED WATER – STILL/SPARKLING 30 AD LIBITUM PER
-          PERSON
-        </h4>
-        </div>
-        
-        </div>
-       
-        
-        
-
-
-
-
-        <h2>OTHERS</h2>
-        <h4>SOJU 140</h4>
-        <h4>GRAPE OR ORIGINAL (BOTTLE)</h4>
-        <h4>SAKE YUZU 95 / 450</h4>
-        <h4>SAKE YUZU 95 / 450</h4>
-        <h4>CHOYA YUZU 105 / 685</h4>
-        
- </div>
-       
-        
-     
-        <h1>HOT DRINKS</h1>
-        <h3>TEA (PAX) 50</h3>
-        <p>
-          EARL GREY / ENGLISH BREAKFAST / GREEN QUINCE / GREEN JASMINE / WHITE
-          TEA / ROOIBOS / OOLONG TEA / DARJEELING OOLONG / LEMON VERBENA /
-          HERBAL
-        </p>
-        <h3>VIETNAMESE DRIP COFFEE 50</h3>
-        <p>BUTTER-ROASTED ROBUSTA SERVED ON FILTER WITH CONDENSED MILK</p>
-        <h3>ESPRESSO 45</h3>
-        </div>
-      
-    
+      <div class="info" id="copy">
+        <p>2025 Copyright CHIBA</p>
+      </div>
+    </footer>
   </body>
 </html>
