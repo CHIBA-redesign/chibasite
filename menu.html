@@ -2,12 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CHIBA</title>
+    <title>Menu</title>
+    <link rel="icon" type="image/svg+xml" href="content/svg/fav11i.svg" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/layout.css" />
-    <link rel="stylesheet" href="css/event.css" />
+    <link rel="stylesheet" href="css/menu.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,10 +18,9 @@
     />
   </head>
   <body>
-    <!--- Header --->
+    <!-- Header -->
     <header class="menu">
       <nav class="burgermenu-container">
-        <!-- Burgerknap -->
         <button class="burgermenu-knap" type="button" aria-label="Åben menu">
           <img
             src="content/svg/burgermenu.svg"
@@ -29,14 +30,12 @@
         </button>
       </nav>
 
-      <!-- Logo -->
       <div class="logo-container">
         <a href="index.html">
           <img src="content/svg/logo1.svg" alt="logo" class="logo-icon" />
         </a>
       </div>
 
-      <!-- Kurv og Book kanp -->
       <nav class="book-container">
         <a href="index.html">
           <img src="content/svg/kurv.svg" alt="kurv icon" class="kurv-icon" />
@@ -44,12 +43,9 @@
         <a href="#" class="ctabtn">BOOK</a>
       </nav>
     </header>
-    <!-- Menuen - lige under header -->
-    <div class="slide-nav" id="site-slide-nav" aria-hidden="true">
-      <!-- Mørk / sløret overlay på resten af siden når menu er åben -->
-      <div class="overlay-bg" data-close></div>
 
-      <!-- Selve menu content -->
+    <div class="slide-nav" id="site-slide-nav" aria-hidden="true">
+      <div class="overlay-bg" data-close></div>
       <nav class="slidemenu-content" aria-label="Primær navigation">
         <ul>
           <li><a href="menu.html">MENU</a></li>
@@ -59,9 +55,226 @@
         </ul>
       </nav>
     </div>
-    <main></main>
-    <!-- Footer-->
-    <!-- Link til JS -->
-    <script defer src="javascript/menu.js"></script>
+
+    <!-- Section 1. WOK -->
+    <section class="WOK">
+      <div class="flex-wok">
+        <h1>WOK</h1>
+      </div>
+      <div class="menu1">
+        <div class="flex-div">
+          <div class="dish">
+            <h3>炒飯 / FRIED RICE 150</h3>
+            <p>
+              JASMINE RICE, SCALLOP, TIGER PRAWN, GREEN BEANS, EGG, CARROT,
+              SPRING ONION
+            </p>
+          </div>
+          <div class="dish">
+            <h3>炒河 / FRIED RIVER NOODLES 130</h3>
+            <p>RICE NOODLES, SOY BEAN SPROUTS, SPRING ONION, SOY, EGG (V)</p>
+          </div>
+          <div class="dish">
+            <h3>宮保雞丁 / KUNGPAO 170</h3>
+            <p>
+              STIR-FRIED CHILI, CHICKEN OR TOFU, SZECHUAN PEPPER, PEANUTS,
+              SPRING ONION
+            </p>
+          </div>
+        </div>
+
+        <div class="flex-div">
+          <div class="dish">
+            <h3>黑椒牛柳 / BLACK PEPPER 170</h3>
+            <p>
+              STIR-FRIED BEEF OR MUSHROOM, BLACK PEPPER SAUCE, GREEN BEANS,
+              PEPPER MIX
+            </p>
+          </div>
+          <div class="dish">
+            <h3>陳皮雞 / ORANGE 170</h3>
+            <p>
+              DEEP FRIED CHICKEN OR TOFU, KUMQUAT, ORANGE VANILLA SAUCE, CHILI
+              PEPPER, ONION
+            </p>
+          </div>
+          <div class="dish">
+            <h3>咕嚕肉 / SWEET & SOUR 170</h3>
+            <p>
+              DEEP-FRIED PORK OR MUSHROOMS, CHILI, PINEAPPLE, BELL PEPPER, ONION
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 2. DUMPLINGS -->
+    <section class="DUMPLINGS">
+      <div class="flex-wok">
+        <h1>DUMPLINGS</h1>
+      </div>
+
+      <div class="menu1">
+        <h2>STEAMED</h2>
+        <div class="dish">
+          <h3>叉燒包 / BBQ BUNS (1 PC) 40</h3>
+          <p>CARAMELIZED CHAR-SIU PORK BAO</p>
+        </div>
+        <div class="dish">
+          <h3>素包 / BOK CHOY BAO(2 PCS) 80</h3>
+          <p>GLASS NOODLES, SALTED BOK CHOY, BLACK MUSHROOM (VG)</p>
+        </div>
+        <div class="dish">
+          <h3>燒賣 / SHU MAI DUMPLINGS (3 PCS) 80</h3>
+          <p>CHICKEN, KING OYSTER MUSHROOM</p>
+        </div>
+        <div class="dish">
+          <h3>蝦餃 / CRYSTAL PRAWN DUMPLING (3 PCS) 80</h3>
+          <p>TIGER PRAWN, BAMBOO SHOOTS</p>
+        </div>
+        <div class="dish">
+          <h3>小籠包 / SIU LONG BAO(3 PCS) 80</h3>
+          <p>SOUP DUMPLINGS OF SHIITAKE, PORK, CABBAGE</p>
+        </div>
+        <div class="dish">
+          <h3>咖喱雲吞 / CURRY WONTONS(3 PCS) 85</h3>
+          <p>TIGER PRAWNS, CHICKEN, RED CURRY SAUCE</p>
+        </div>
+        <div class="dish">
+          <h3>黑醋雲吞 / BLACK VINEGAR WONTONS(3 PCS) 80</h3>
+          <p>TIGER PRAWNS, CHICKEN, BLACK VINEGAR, KOREAN PEPPER SOY SAUCE</p>
+        </div>
+      </div>
+
+      <div class="flex-div">
+        <h2>FRIED</h2>
+        <div class="dish">
+          <h3>潮州粉粿 / CHIU CHOW DUMPLINGS(3 PCS) 80</h3>
+          <p>
+            CARAMELIZED SHREDDED PEKING DUCK, PEANUT, CORIANDER, SPRING ONIONS
+          </p>
+        </div>
+        <div class="dish">
+          <h3>春卷 / SPRING ROLLS (2 PCS) 80</h3>
+          <p>
+            TIGER PRAWN, CRAB MEAT, CHICKEN, WATER CHESTNUT, VERMICELLI, BLACK
+            MUSHROOM
+          </p>
+        </div>
+        <div class="dish">
+          <h3>咸水角 / GLUTINOUS RICE DUMPLINGS (3 PCS) 80</h3>
+          <p>TIGER PRAWN, FERMENTED SALTED CHINESE RADISH, CHICKEN, SHIITAKE</p>
+        </div>
+        <div class="dish">
+          <h3>炸雲吞 / FRIED WONTONS (3 PCS) 80</h3>
+          <p>CHICKEN, PRAWNS, KING OYSTER MUSHROOM</p>
+        </div>
+        <div class="dish">
+          <h3>素食春捲 / TOFU ROLLS (3 PCS) 80</h3>
+          <p>TOFU, WATER CHESTNUT, VERMICELLI, BLACK MUSHROOM (V)</p>
+        </div>
+
+        <h2>PAN-FRIED</h2>
+        <div class="dish">
+          <h3>生煎包 / SHANGHAI BUNS (3 PCS) 80</h3>
+          <p>PORK, CABBAGE, BLACK MUSHROOMS</p>
+        </div>
+        <div class="dish">
+          <h3>餃子 / PORTINI GAO (3 PCS) 80</h3>
+          <p>PORTINI DUMPLING, SPRING ONION (VG)</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section 3. ROASTED -->
+    <section class="ROASTED">
+      <div class="flex-wok">
+        <h1>ROASTED</h1>
+      </div>
+      <div class="dish">
+        <h3>烤鴨 / DUCK (HALF) 375</h3>
+        <p>
+          PEKING DUCK SERVED ON THE BONE, BAO, MAI LO KUE PLUM SAUCE, BOK CHOY
+          KIMCHI
+        </p>
+      </div>
+      <div class="dish">
+        <h3>& MORE</h3>
+      </div>
+      <div class="dish">
+        <h3>抄面 / PEANUT NOODLES 120</h3>
+        <p>CUT NOODLES IN CARAMELIZED PEANUT-CHILI SAUCE</p>
+      </div>
+      <div class="dish">
+        <h3>雲吞湯 / WONTON SOUP 80</h3>
+        <p>DUMPLING SOUP WITH CHICKEN, PRAWNS, CHANTERELLES, FRESH GINGER</p>
+      </div>
+      <div class="dish">
+        <h3>拍黃瓜 / CUCUMBER SALAD 70</h3>
+        <p>
+          CUCUMBER, RED ONION, KUMQUAT TOSSED IN SOY-CHILI-SESAME DRESSING (VG)
+        </p>
+      </div>
+      <div class="dish">
+        <h3>蒜蓉炒白菜 / BOK CHOY 100</h3>
+        <p>STIR-FRIED BOK CHOY DRIZZLED WITH FRIED GARLIC (VG)</p>
+      </div>
+      <div class="dish">
+        <h3>炸面 / FRIED BREAD 20</h3>
+      </div>
+      <div class="dish">
+        <h3>米 / RICE 30</h3>
+      </div>
+    </section>
+
+    <!-- Section 4. Dessert -->
+    <section class="dessert">
+      <div class="flex-div">
+        <h1>DESSERTS</h1>
+      </div>
+      <div class="dish">
+        <h4>PISTACHIO TIRAMISU 90</h4>
+        <h4>BLACK SESAME & PASSION FRUIT PANNA COTTA 90</h4>
+        <h4>VANILLA BASQUE CHEESECAKE 90</h4>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="info" id="vester">
+        <h2>ADDRESS</h2>
+        <p>Vesterbrogade 56</p>
+      </div>
+      <p class="info" id="copen">1620 Copenhagen V</p>
+      <p class="info" id="nr">+45 93 98 38 88</p>
+
+      <div class="info" id="open">
+        <h2>OPENING HOURS</h2>
+        <p>Tue-Sat: 17-23</p>
+      </div>
+      <h2 class="info" id="rapport">KONTROL&shy;RAPPORT</h2>
+      <h2 class="info" id="contact">CONTACT</h2>
+
+      <hr class="vertical-line" />
+      <hr class="vertical-line2" />
+
+      <div class="info" id="logo">
+        <img src="content/svg/logo1.svg" alt="" />
+      </div>
+
+      <div class="info" id="sociale">
+        <a href="https://www.facebook.com/p/CHIBA-61567063765268/">
+          <!-- facebook svg -->
+        </a>
+        <a href="https://www.instagram.com/dear.chiba/">
+          <!-- instagram svg -->
+        </a>
+      </div>
+
+      <div class="info" id="copy">
+        <p>2025 Copyright CHIBA</p>
+      </div>
+    </footer>
+    <script defer src="javascript/login.js"></script>
   </body>
 </html>
