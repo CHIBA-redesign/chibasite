@@ -1,0 +1,78 @@
+/* --- layout--- */
+
+.error-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container */
+.container {
+  position: relative;
+  text-align: center;
+  max-width: 420px;
+  padding-top: 110px;
+}
+
+/* --- 404--- */
+
+.error-code {
+  position: absolute;
+  top: 0; /* ingen minus */
+  left: 50%;
+  transform: translateX(-50%);
+
+  font-size: 320px;
+  font-family: var(--font-h1);
+  font-weight: 700;
+  line-height: 1;
+
+  color: #000;
+  opacity: 0.03;
+  z-index: 0;
+  pointer-events: none;
+}
+/* --- svg --- */
+
+.icon {
+  position: relative;
+  z-index: 1;
+
+  width: 220px;
+  margin: 90px auto 20px auto;
+}
+/* --- text --- */
+
+h1,
+h2,
+p {
+  position: relative;
+  z-index: 1;
+}
+
+h2 {
+  margin-bottom: 12px;
+  font-size: 28px;
+}
+
+p {
+  margin-bottom: 32px;
+  color: #555;
+  font-size: 16px;
+}
+/* --- knap --- */
+
+.ctabtn-2 {
+  position: relative;
+  z-index: 1;
+
+  background: var(--color-cta-bg);
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 14px;
+  display: inline-block;
+  font-family: var(--font-prose);
+  letter-spacing: 0.03em;
+}
