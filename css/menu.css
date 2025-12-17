@@ -42,7 +42,7 @@ p {
   font-size: 11px;
   font-weight: 300;
   color: black;
-  padding-bottom: 25px;
+  padding-bottom: 5px;
   text-align: center;
 }
 
@@ -56,10 +56,12 @@ section {
 .ROASTED,
 .dessert {
   background-color: var(--color-bg-primary);
+  margin-top: 0pax;
 }
 
 .DUMPLINGS {
-  pa
+  padding: 0pax;
+  margin: 0pax;
 }
 
 /* ---------------- MENU LAYOUT (MOBIL) ---------------- */
